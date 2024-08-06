@@ -1,0 +1,21 @@
+[project]
+name = "cocotbext-onfi"
+version = "0.1.0"
+description = "Cocotb VIP for ONFI"
+authors = [
+    {name = "Vijayvithal Jahagirdar", email = "jahagirdar.vs@gmail.com"},
+]
+dependencies = [
+    "cocotb>=1.9.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
