@@ -1,3 +1,7 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/cocotbext/onfi')))
 import cocotb
 from cocotb.clock import Clock
 from cocotb.triggers import FallingEdge, RisingEdge, Timer
@@ -91,7 +95,6 @@ async def test_command_signals(dut):
     if unrecognizable_signals:
         cocotb.log.warning(f"Unrecognizable signals: {', '.join(unrecognizable_signals)}")
 
-    # Add your command tests below
     await test_read_command(dut, signals)
 
 async def test_read_command(dut, signals):

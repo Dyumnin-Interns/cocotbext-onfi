@@ -1,0 +1,6 @@
+[submodule "NandFlashController"]
+	path = NandFlashController
+	url = git@github.com:cjhonlyone/NandFlashController.git
+[submodule "hdl/NandFlashcontroller"]
+	path = hdl/NandFlashcontroller
+	url = git@github.com:cjhonlyone/NandFlashController.git

@@ -25,6 +25,7 @@ module nand_controller (
     inout wire IO5_0,
     inout wire IO6_0,
     inout wire IO7_0,
+    inout wire [7:0] IO_bus,
 
     inout wire IO8,
     inout wire IO9,
@@ -57,7 +58,7 @@ module nand_controller (
     inout wire NC,
     inout wire ZQ_x
 );
-
+ assign IO_bus = {IO0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
 initial begin
     $display("NAND Controller");
     $dumpfile("waveform.vcd");

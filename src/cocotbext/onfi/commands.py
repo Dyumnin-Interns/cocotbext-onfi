@@ -217,13 +217,12 @@ async def _send_bytes(dut,txdata):
     for byte in txdata:
         await _drive_to_io_ports(dut,byte)
         await Timer(10, units='ns')  # Simulate a delay between each byte
-
-async def _drive_to_io_ports(dut,byte):
+async def _drive_to_io_ports(dut, byte):
     for i in range(8):
-        getattr(dut, f"IO{i}_0").value = (byte >> i) & 0x1
-
+        setattr(dut, f"IO{i}_0", (byte >> i) & 0x1)
     for i in range(8):
-        getattr(dut, f"IO{i}_1").value = (byte >> (i + 8)) & 0x1
+        setattr(dut, f"IO{i}_1", (byte >> (i + 8)) & 0x1)
+    dut.IO_bus.value = byte    
 async def _get_bytes(num_bytes):
     rv = [0xFF] * num_bytes  # Dummy data for simulation
     print(f"Received bytes: {rv}")

@@ -9,7 +9,8 @@ module top;
     wire ENo, ENi;
     wire VSP_x, R, RFT, NU, NC, ZQ_x;
     wire RB_x_n;
-   
+    wire [7:0] IO_bus;
+    wire [7:0] IO0_bus;
     nand_controller u_nand_controller (
         .clk(clk),
         .RB_x_n(RB_x_n),
@@ -38,7 +39,7 @@ module top;
         .IO5_0(IO5_0),
         .IO6_0(IO6_0),
         .IO7_0(IO7_0),
-
+ .IO_bus(IO_bus),
         // IO8 - IO15 series
         .IO8(IO8),
         .IO9(IO9),
@@ -70,7 +71,7 @@ module top;
         .NU(NU),
         .NC(NC),
         .ZQ_x(ZQ_x)
-    );
+);
 
     // Instantiate the dummy_dut
     dummy_dut u_dummy_dut (
@@ -101,7 +102,7 @@ module top;
         .IO5_0(IO5_0),
         .IO6_0(IO6_0),
         .IO7_0(IO7_0),
-
+.IO_bus(IO_bus),
         // IO8 - IO15 series
         .IO8(IO8),
         .IO9(IO9),
@@ -133,10 +134,16 @@ module top;
         .NU(NU),
         .NC(NC),
         .ZQ_x(ZQ_x)
-    );
-
+);
+assign IO0_bus = {IO0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
+assign IO0_bus = {IO0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
     initial begin
+	$display("Top_level");
+        $dumpfile("waveform.vcd");  // Specify the output file for waveform data
+        $dumpvars(0, top);  
         clk = 0;
-        forever #5 clk = ~clk; // 100 MHz clock
+        forever #5 clk = ~clk;
+ $monitor("Time: %0t, IO_bus: %h", $time, IO_bus);       
+	// 100 MHz clock
     end
 endmodule
