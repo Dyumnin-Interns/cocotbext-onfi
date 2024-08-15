@@ -1,20 +1,18 @@
-from signals_dict import signal_dict
+from memory import sigdict
 
 class Bus:
    
 
-      def __init__(self, dut, name=None, signals=signal_dict, optional_signals=None, bus_separator="_", case_insensitive=True, array_idx=None):
-        self._name = name
+    def __init__(self, top, name=None, signals=sigdict, optional_signals=None, bus_separator="_", case_insensitive=True, array_idx=None):
+        self._dut = top
+        self._name= name
         self._signals = signals
-        self._optional_signals = optional_signals or {}
-        self._bus_separator = bus_separator
-        self._case_insensitive = case_insensitive
-        self._array_idx = array_idx
+      
 
-        num_luns = len([s for s in dir(dut) if "LUN" in s])
+        num_luns =  2 ##2 for now then later change it to len([s for s in dir(dut) if "LUN" in s])
 
         expanded_signals = {}
-
+  
       
         for sig_name, sig_aliases in signals.items():
             if 'x' in sig_name:

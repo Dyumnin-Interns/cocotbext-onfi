@@ -1,4 +1,4 @@
-signal_dict = {
+sigdict = {
     "RE_x_n": ["RE_x_n", "RE_x_t"],
     "RE_x_c": ["RE_x_c"],
     "WR_x_n": ["WR_x_n"],
