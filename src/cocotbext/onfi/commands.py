@@ -13,13 +13,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 0},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 0,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'sync_reset': {
         'cmd1': 0xFC,
@@ -27,13 +25,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 0},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 0,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'reset_lun': {
         'cmd1': 0x00,
@@ -41,13 +37,11 @@ cmds = {
         'cmd2': 0xFA,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'read_device_id': {
         'cmd1': 0x90,
@@ -55,13 +49,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'read_param_page': {
         'cmd1': 0xEC,
@@ -69,13 +61,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'read_unique_id': {
         'cmd1': 0xED,
@@ -83,13 +73,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'block_erase': {
         'cmd1': 0x60,
@@ -97,13 +85,11 @@ cmds = {
         'cmd2': 0xD0,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'read_status': {
         'cmd1': 0x70,
@@ -111,13 +97,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 0},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 0,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'read_status_enhanced': {
         'cmd1': 0x78,
@@ -125,13 +109,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'standard_read': {
         'cmd1': 0x00,
@@ -139,13 +121,11 @@ cmds = {
         'cmd2': 0x30,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'read_cache_sequential': {
         'cmd1': 0x31,
@@ -153,13 +133,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 0},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 0,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'read_cache_random': {
         'cmd1': 0x00,
@@ -167,13 +145,11 @@ cmds = {
         'cmd2': 0x31,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'copyback_read': {
         'cmd1': 0x00,
@@ -181,13 +157,11 @@ cmds = {
         'cmd2': 0x35,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'copyback_program': {
         'cmd1': 0x85,
@@ -195,13 +169,11 @@ cmds = {
         'cmd2': 0x10,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'copyback_read_with_data_output': {
         'cmd1': 0x05,
@@ -209,13 +181,11 @@ cmds = {
         'cmd2': 0xE0,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'copyback_program_with_data_mod': {
         'cmd1': 0x85,
@@ -223,17 +193,11 @@ cmds = {
         'cmd2': 0x10,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
-    },
-    'zq_calibration_long': {
-        'cmd1': 0xF9,
-   
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'zq_calibration_long': {
         'cmd1': 0xF9,
@@ -241,13 +205,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 0},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 0,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'zq_calibration_short': {
         'cmd1': 0xFB,
@@ -255,13 +217,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 0},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 0,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'get_feature': {
         'cmd1': 0xEE,
@@ -269,13 +229,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'set_feature': {
         'cmd1': 0xEF,
@@ -283,13 +241,11 @@ cmds = {
         'cmd2': None,
         'data': [0x00, 0x00, 0x00, 0x00],  
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'read_page': {
         'cmd1': 0x00,
@@ -297,13 +253,11 @@ cmds = {
         'cmd2': 0x30,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'random_data_input': {
         'cmd1': 0x85,
@@ -311,13 +265,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'random_data_output': {
         'cmd1': 0x05,
@@ -325,13 +277,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'program_page': {
         'cmd1': 0x80,
@@ -339,13 +289,11 @@ cmds = {
         'cmd2': 0x10,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'program_page_cache': {
         'cmd1': 0x80,
@@ -353,13 +301,11 @@ cmds = {
         'cmd2': 0x15,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'read_page_cache_sequential': {
         'cmd1': 0x31,
@@ -367,13 +313,11 @@ cmds = {
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 0},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 0,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'read_page_cache_random': {
         'cmd1': 0x00,
@@ -381,13 +325,11 @@ cmds = {
         'cmd2': 0x31,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'two_plane_page_read': {
         'cmd1': 0x00,
@@ -395,13 +337,11 @@ cmds = {
         'cmd2': 0x32,
         'data': None,
         'await_data': True,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 1},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 1,
+        'CE': 1
     },
     'two_plane_page_program': {
         'cmd1': 0x80,
@@ -409,13 +349,11 @@ cmds = {
         'cmd2': 0x11,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     },
     'two_plane_block_erase': {
         'cmd1': 0x60,
@@ -423,17 +361,16 @@ cmds = {
         'cmd2': 0xD1,
         'data': None,
         'await_data': False,
-        'signal_ops': [
-            {'signal': 'CLE', 'value': 1},
-            {'signal': 'ALE', 'value': 1},
-            {'signal': 'WE', 'value': 1},
-            {'signal': 'RE', 'value': 0},
-            {'signal': 'CE', 'value': 1}
-        ]
+        'CLE': 1,
+        'ALE': 1,
+        'WE': 1,
+        'RE': 0,
+        'CE': 1
     }
 }
-async def txn(command_name,dut,addr=None, data=None):
-    
+
+async def txn(name,dut,addr=None, data=None):
+    txn_template = cmds[name]
     txdata = []
     signal_keywords = ["CLE", "ALE", "WE", "RE", "CE"]
    
