@@ -1,5 +1,11 @@
 import cocotb
 from cocotb.triggers import Timer
+import sys
+import os
+from cocotb.clock import Clock
+from cocotb.triggers import FallingEdge, RisingEdge, Timer
+from bus import Bus
+from memory import sigdict
 cmds = {
     'reset': {
         'cmd1': 0xFF,
@@ -426,9 +432,75 @@ cmds = {
         ]
     }
 }
-async def txn(name,dut,addr=None, data=None):
-    txn_template = cmds[name]
+async def txn(command_name,dut,addr=None, data=None):
+    
     txdata = []
+    signal_keywords = ["CLE", "ALE", "WE", "RE", "CE"]
+   
+    def find_signals_with_keywords(dut, keywords):
+        matching_signals = {}
+        for attr_name in dir(dut):
+            for keyword in keywords:
+                if keyword in attr_name:
+                    matching_signals.setdefault(keyword, []).append(attr_name)
+        return matching_signals
+
+    
+    relevant_signals = find_signals_with_keywords(dut, signal_keywords)
+
+    # Print all matching signals found
+    print("Matching signals are the following:")
+    for keyword, signal_names in relevant_signals.items():
+        for signal_name in signal_names:
+            print(f"Signal containing '{keyword}': {signal_name}")
+
+   
+    for keyword, signal_names in relevant_signals.items():
+        signal_value = txn_template.get(keyword, None)  
+        if signal_value is not None:
+            for signal_name in signal_names:
+               
+                setattr(dut, signal_name, signal_value)
+                print(f"Driving {signal_name} to {signal_value}")
+
+   
+    '''signal_ops = txn_template.get('signal_ops', None)
+    if isinstance(signal_ops, list):
+        for op in signal_ops:
+            signal_name = op['signal']
+            value = op['value']
+            for signal in self.signals:
+                if signal_name in signal:
+                    signal_obj = self.signals[signal]
+                    print(f"Toggling {signal} to value {value}")
+                    signal_obj.drive(value)
+    elif signal_ops is not None:
+        raise TypeError("signal_ops must be a list of dictionaries ") 
+
+       # Extract signals from the bus
+    command_info = cmds.get(command_name)
+    
+    if not command_info:
+        raise ValueError(f"Command {command_name} not found in cmds dictionary.")
+    
+    signal_ops = command_info.get('signal_ops', {})
+
+    # Extract signals from the bus (dut)
+    signals = [s for s in dir(dut) if not s.startswith("_")]
+    print(f"Extracted the following signals: {signals}")
+
+    # Matching and driving signals based on command signal operations
+    for keyword, value in signal_ops.items():
+        for sig in signals:
+            if keyword in sig:
+                # Drive the value
+                signal_to_drive = getattr(dut, sig)
+                signal_to_drive.value = value
+                print(f"Driving {sig} with value {value} based on keyword {keyword}")'''
+
+
+
+    await Timer(10, units='ns')
 
     txdata.append(txn_template['cmd1'])
 
@@ -440,7 +512,7 @@ async def txn(name,dut,addr=None, data=None):
     if txn_template['cmd2'] is not None:
         txdata.append(txn_template['cmd2'])
 
-    # Add data if specified
+    
     if data is None and txn_template.get('data') is not None:
         data = txn_template['data']
     if data is not None:

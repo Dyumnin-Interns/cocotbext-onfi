@@ -11,6 +11,7 @@ module top;
     wire RB_x_n;
     wire [7:0] IO_bus;
     wire [7:0] IO0_bus;
+    wire RE_0_n, RE_1_n, RE_0_c, RE_1_c, WR_0_n, WR_1_n, CE_0_n, CE_1_n, CLE_0, CLE_1, ALE_0, ALE_1,WE_0_n,WE_1_n, CLK_0, CLK_1, WP_0_n, WP_1_n;
     nand_controller u_nand_controller (
         .clk(clk),
         .RB_x_n(RB_x_n),
@@ -29,6 +30,31 @@ module top;
         .WE_x_n(WE_x_n),
         .CLK_x(CLK_x),
         .WP_x_n(WP_x_n),
+        // LUN-specific signals for multiple LUNs
+.RE_0_n(RE_0_n),
+.RE_1_n(RE_1_n),
+.RE_0_c(RE_0_c),
+.RE_1_c(RE_1_c),
+.WR_0_n(WR_0_n),
+.WR_1_n(WR_1_n),
+.CE_0_n(CE_0_n),
+.CE_1_n(CE_1_n),
+.CLE_0(CLE_0),
+.CLE_1(CLE_1),
+.ALE_0(ALE_0),
+.ALE_1(ALE_1),
+.WE_0_n(WE_0_n),
+.WE_1_n(WE_1_n),
+.CLK_0(CLK_0),
+.CLK_1(CLK_1),
+.WP_0_n(WP_0_n),
+.WP_1_n(WP_1_n),
+
+
+
+
+
+
 
         // IO0_0 - IO7_0 series
         .IO0_0(IO0_0),
@@ -92,6 +118,31 @@ module top;
         .WE_x_n(WE_x_n),
         .CLK_x(CLK_x),
         .WP_x_n(WP_x_n),
+// LUN-specific signals for multiple LUNs
+.RE_0_n(RE_0_n),
+.RE_1_n(RE_1_n),
+.RE_0_c(RE_0_c),
+.RE_1_c(RE_1_c),
+.WR_0_n(WR_0_n),
+.WR_1_n(WR_1_n),
+.CE_0_n(CE_0_n),
+.CE_1_n(CE_1_n),
+.CLE_0(CLE_0),
+.CLE_1(CLE_1),
+.ALE_0(ALE_0),
+.ALE_1(ALE_1),
+.WE_0_n(WE_0_n),
+.WE_1_n(WE_1_n),
+.CLK_0(CLK_0),
+.CLK_1(CLK_1),
+.WP_0_n(WP_0_n),
+.WP_1_n(WP_1_n),
+
+
+
+
+
+
 
         // IO0_0 - IO7_0 series
         .IO0_0(IO0_0),

@@ -31,12 +31,12 @@ class Bus:
             else:
                 signame = sig_name
 
-            
+            print(f"Adding signal: {signame}") 
             self._add_signal(sig_name, signame, array_idx, case_insensitive)
 
+      
         
-        for attr_name, sig_name in self._optional_signals.items():
-            self._add_optional_signal(attr_name, sig_name, array_idx, case_insensitive)
+    
 
     def _add_signal(self, attr_name, sig_name, array_idx=None, case_insensitive=True):
         signal = self._get_signal(sig_name, case_insensitive)
@@ -44,12 +44,7 @@ class Bus:
             signal = signal[array_idx]
         setattr(self, attr_name, signal)
 
-    def _add_optional_signal(self, attr_name, sig_name, array_idx=None, case_insensitive=True):
-        signal = self._get_signal(sig_name, case_insensitive)
-        if signal is not None:
-            if array_idx is not None:
-                signal = signal[array_idx]
-            setattr(self, attr_name, signal)
+    
 
     def _get_signal(self, sig_name, case_insensitive=True):
         if case_insensitive:

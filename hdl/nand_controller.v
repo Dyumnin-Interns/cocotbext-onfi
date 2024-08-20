@@ -56,7 +56,26 @@ module nand_controller (
     input wire RFT,
     inout wire NU,
     inout wire NC,
-    inout wire ZQ_x
+    inout wire ZQ_x,
+
+    inout wire RE_0_n,
+    inout wire RE_1_n,
+    inout wire RE_0_c,
+    inout wire RE_1_c,
+    inout wire WR_0_n,
+    inout wire WR_1_n,
+    inout wire CE_0_n,
+    inout wire CE_1_n,
+    inout wire CLE_0,
+    inout wire CLE_1,
+    inout wire ALE_0,
+    inout wire ALE_1,
+    inout wire WE_0_n,
+    inout wire WE_1_n,
+    inout wire CLK_0,
+    inout wire CLK_1,
+    inout wire WP_0_n,
+    inout wire WP_1_n
 );
  assign IO_bus = {IO0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
 initial begin
