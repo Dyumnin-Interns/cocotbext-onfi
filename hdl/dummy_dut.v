@@ -17,7 +17,7 @@ module dummy_dut(
     input wire CLK_x,
     input wire WP_x_n,
 
-    inout wire IO0_0,
+    inout wire DQ0_0,
     inout wire IO1_0,
     inout wire IO2_0,
     inout wire IO3_0,
@@ -44,8 +44,8 @@ module dummy_dut(
     inout wire IO6_1,
     inout wire IO7_1,
 
-    inout wire DQS,
-    inout wire DQS_x_c,
+    inout wire IOS,
+    inout wire IOS_x_c,
     inout wire DBI_x,
 
     output wire ENo,
@@ -55,9 +55,28 @@ module dummy_dut(
     output wire RFT,
     inout wire NU,
     inout wire NC,
-    inout wire ZQ_x
+    inout wire ZQ_x,
+
+    inout wire RE_0_n,
+    inout wire RE_1_n,
+    inout wire RE_0_c,
+    inout wire RE_1_c,
+    inout wire WR_0_n,
+    inout wire WR_1_n,
+    inout wire CE_0_n,
+    inout wire CE_1_n,
+    inout wire CLE_0,
+    inout wire CLE_1,
+    inout wire ALE_0,
+    inout wire ALE_1,
+    inout wire WE_0_n,
+    inout wire WE_1_n,
+    inout wire CLK_0,
+    inout wire CLK_1,
+    inout wire WP_0_n,
+    inout wire WP_1_n
 );
-assign IO_bus = {IO7_0, IO6_0, IO5_0, IO4_0, IO3_0, IO2_0, IO1_0, IO0_0};
+assign IO_bus = {DQ0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
 
 initial begin
         $display("Dummy DUT");
