@@ -32,28 +32,7 @@ async def test_bus_signal_expansion(top):
     
 
 
-'''@cocotb.test()
-async def test_command_signals(dut):
-    await generate_clock(dut)
-    await RisingEdge(dut.clk)
 
-    
-    signals, unrecognizable_signals = fetch_signals(dut)
-
-  
-    cocotb.log.info(f"Total signals found: {len(signals)} out of {len(signal_names_with_alternates)}")
-    for name, handle in signals.items():
-        cocotb.log.info(f"Signal name: {name}, Handle: {handle}")
-
-  
-    if unrecognizable_signals:
-        cocotb.log.warning(f"Unrecognizable signals: {', '.join(unrecognizable_signals)}")
-
-    await test_read_command(dut, signals)
-
-async def test_read_command(dut, signals):
-   
-    pass'''
 
 @cocotb.test()
 async def test_reset(dut):

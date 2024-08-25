@@ -369,93 +369,58 @@ cmds = {
     }
 }
 
-async def txn(name,dut,addr=None, data=None):
+async def txn(name, dut,bus=None,byte=None, addr=None, data=None):
     txn_template = cmds[name]
     txdata = []
     signal_keywords = ["CLE", "ALE", "WE", "RE", "CE"]
-   
-    def find_signals_with_keywords(dut, keywords):
-        matching_signals = {}
-        for attr_name in dir(dut):
-            for keyword in keywords:
-                if keyword in attr_name:
-                    matching_signals.setdefault(keyword, []).append(attr_name)
-        return matching_signals
+    
+    
+    bus = Bus(dut.u_nand_controller)
 
     
-    relevant_signals = find_signals_with_keywords(dut, signal_keywords)
+    bus_signal_names = dir(bus)
+    print("Available signals in Bus:", bus_signal_names)
 
-    # Print all matching signals found
-    print("Matching signals are the following:")
-    for keyword, signal_names in relevant_signals.items():
-        for signal_name in signal_names:
-            print(f"Signal containing '{keyword}': {signal_name}")
+    
+    relevant_signals = {}
+    for sig_name in bus_signal_names:
+        if any(keyword in sig_name for keyword in signal_keywords):
+            actual_name = bus.get_actual_signal_name(sig_name)
+            relevant_signals[actual_name] = getattr(bus, actual_name)
+    
+    print("Relevant signals to drive:")
+    for sig_name, sig_obj in relevant_signals.items():
+        print(f"{sig_name}: {sig_obj}")
 
-   
-    for keyword, signal_names in relevant_signals.items():
-        signal_value = txn_template.get(keyword, None)  
+    # Drive the relevant signals
+    for sig_name, sig_obj in relevant_signals.items():
+        keyword = next((kw for kw in signal_keywords if kw in sig_name), None)
+        signal_value = txn_template.get(keyword, None)
         if signal_value is not None:
-            for signal_name in signal_names:
-               
-                setattr(dut, signal_name, signal_value)
-                print(f"Driving {signal_name} to {signal_value}")
-
-   
-    '''signal_ops = txn_template.get('signal_ops', None)
-    if isinstance(signal_ops, list):
-        for op in signal_ops:
-            signal_name = op['signal']
-            value = op['value']
-            for signal in self.signals:
-                if signal_name in signal:
-                    signal_obj = self.signals[signal]
-                    print(f"Toggling {signal} to value {value}")
-                    signal_obj.drive(value)
-    elif signal_ops is not None:
-        raise TypeError("signal_ops must be a list of dictionaries ") 
-
-       # Extract signals from the bus
-    command_info = cmds.get(command_name)
-    
-    if not command_info:
-        raise ValueError(f"Command {command_name} not found in cmds dictionary.")
-    
-    signal_ops = command_info.get('signal_ops', {})
-
-    # Extract signals from the bus (dut)
-    signals = [s for s in dir(dut) if not s.startswith("_")]
-    print(f"Extracted the following signals: {signals}")
-
-    # Matching and driving signals based on command signal operations
-    for keyword, value in signal_ops.items():
-        for sig in signals:
-            if keyword in sig:
-                # Drive the value
-                signal_to_drive = getattr(dut, sig)
-                signal_to_drive.value = value
-                print(f"Driving {sig} with value {value} based on keyword {keyword}")'''
-
-
+            sig_obj.value = signal_value
+            print(f"Driving {sig_name} to {signal_value}")
+        else:
+            print(f"Warning: No value found for {sig_name} in the txn template. Skipping.")
 
     await Timer(10, units='ns')
 
+    
     txdata.append(txn_template['cmd1'])
 
     if txn_template['addr_len'] is not None:
         if addr is None:
-            addr = [0x00] * txn_template['addr_len']  # Default address if none provided
+            addr = [0x00] * txn_template['addr_len']  
         txdata.extend(addr[:txn_template['addr_len']])
         
     if txn_template['cmd2'] is not None:
         txdata.append(txn_template['cmd2'])
 
-    
     if data is None and txn_template.get('data') is not None:
         data = txn_template['data']
     if data is not None:
         txdata.extend(data)
 
-    await _send_bytes(dut,txdata)
+    await _send_bytes(dut, txdata)
     
     if txn_template.get('await_data'):
         rv = await _get_bytes(len(txdata))
@@ -463,18 +428,45 @@ async def txn(name,dut,addr=None, data=None):
     else:
         return None
 
-async def _send_bytes(dut,txdata):
+    for i in range(8):
+        signal_name_0 = f"IO{i}_0"
+        signal_name_1 = f"IO{i}_1"
+
+        if hasattr(bus, signal_name_0):
+            setattr(getattr(bus, signal_name_0), 'value', (byte >> i) & 0x1)
+        else:
+            print(f"Warning: Signal {signal_name_0} not found in Bus. Skipping.")
+
+        if hasattr(bus, signal_name_1):
+            setattr(getattr(bus, signal_name_1), 'value', (byte >> (i + 8)) & 0x1)
+        else:
+            print(f"Warning: Signal {signal_name_1} not found in Bus. Skipping.")
+        dut.IO_bus.value = byte
+async def _send_bytes(dut, txdata):
+    bus = Bus(dut.u_nand_controller)
     for byte in txdata:
-        await _drive_to_io_ports(dut,byte)
-        await Timer(10, units='ns')  # Simulate a delay between each byte
-async def _drive_to_io_ports(dut, byte):
+        await _drive_to_io_ports(dut, bus, byte)
+        await Timer(10, units='ns')  
+
+async def _drive_to_io_ports(dut, bus, byte):
     for i in range(8):
-        setattr(dut, f"IO{i}_0", (byte >> i) & 0x1)
-    for i in range(8):
-        setattr(dut, f"IO{i}_1", (byte >> (i + 8)) & 0x1)
-    dut.IO_bus.value = byte    
+        signal_name_0 = f"IO{i}_0"
+        signal_name_1 = f"IO{i}_1"
+
+        if hasattr(bus, signal_name_0):
+            setattr(getattr(bus, signal_name_0), 'value', (byte >> i) & 0x1)
+        else:
+            print(f"Warning: Signal {signal_name_0} not found in Bus. Skipping.")
+
+        if hasattr(bus, signal_name_1):
+            setattr(getattr(bus, signal_name_1), 'value', (byte >> (i + 8)) & 0x1)
+        else:
+            print(f"Warning: Signal {signal_name_1} not found in Bus. Skipping.")
+        dut.IO_bus.value = byte
+
 async def _get_bytes(num_bytes):
-    rv = [0xFF] * num_bytes  # Dummy data for simulation
-    print(f"Received bytes: {rv}")
+    rv = [0xFF] * num_bytes  
     return rv
+
+
 

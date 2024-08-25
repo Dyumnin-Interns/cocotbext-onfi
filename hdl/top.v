@@ -2,10 +2,10 @@ module top;
     reg clk;
     wire RE_x_n, RE_x_c, WR_x_n, CE_x_n, Vcc, VccQ, Vss, VssQ, VREFQ_x, Vpp;
     wire CLE_x, ALE_x, WE_x_n, CLK_x, WP_x_n;
-    wire IO0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0;
+    wire DQ0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0;
     wire IO8, IO9, IO10, IO11, IO12, IO13, IO14, IO15;
     wire IO0_1, IO1_1, IO2_1, IO3_1, IO4_1, IO5_1, IO6_1, IO7_1;
-    wire DQS_x_t, DQS_x_c, DBI_x;
+    wire IOS_x_t, IOS_x_c, DBI_x;
     wire ENo, ENi;
     wire VSP_x, R, RFT, NU, NC, ZQ_x;
     wire RB_x_n;
@@ -56,8 +56,8 @@ module top;
 
 
 
-        // IO0_0 - IO7_0 series
-        .IO0_0(IO0_0),
+        // DQ0_0 - IO7_0 series
+        .DQ0_0(DQ0_0),
         .IO1_0(IO1_0),
         .IO2_0(IO2_0),
         .IO3_0(IO3_0),
@@ -86,8 +86,8 @@ module top;
         .IO6_1(IO6_1),
         .IO7_1(IO7_1),
 
-        .DQS(DQS),
-        .DQS_x_c(DQS_x_c),
+        .IOS(IOS),
+        .IOS_x_c(IOS_x_c),
         .DBI_x(DBI_x),
         .ENo(ENo),
         .ENi(ENi),
@@ -144,8 +144,8 @@ module top;
 
 
 
-        // IO0_0 - IO7_0 series
-        .IO0_0(IO0_0),
+        // DQ0_0 - IO7_0 series
+        .DQ0_0(DQ0_0),
         .IO1_0(IO1_0),
         .IO2_0(IO2_0),
         .IO3_0(IO3_0),
@@ -153,7 +153,7 @@ module top;
         .IO5_0(IO5_0),
         .IO6_0(IO6_0),
         .IO7_0(IO7_0),
-.IO_bus(IO_bus),
+        .IO_bus(IO_bus),
         // IO8 - IO15 series
         .IO8(IO8),
         .IO9(IO9),
@@ -174,8 +174,8 @@ module top;
         .IO6_1(IO6_1),
         .IO7_1(IO7_1),
 
-        .DQS(DQS),
-        .DQS_x_c(DQS_x_c),
+        .IOS(IOS),
+        .IOS_x_c(IOS_x_c),
         .DBI_x(DBI_x),
         .ENo(ENo),
         .ENi(ENi),
@@ -186,8 +186,8 @@ module top;
         .NC(NC),
         .ZQ_x(ZQ_x)
 );
-assign IO0_bus = {IO0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
-assign IO0_bus = {IO0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
+assign IO0_bus = {DQ0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
+assign IO_bus = {DQ0_0, IO1_0, IO2_0, IO3_0, IO4_0, IO5_0, IO6_0, IO7_0};
     initial begin
 	$display("Top_level");
         $dumpfile("waveform.vcd");  // Specify the output file for waveform data
