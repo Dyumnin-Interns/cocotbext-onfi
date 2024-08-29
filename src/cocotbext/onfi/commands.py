@@ -16,8 +16,10 @@ cmds = {
         'CLE': 1,
         'ALE': 0,
         'WE': 1,
-        'RE': 0,
-        'CE': 1
+        'RE': 1,
+        'CE': 1,
+        'DQS':1
+##R/B_n xxtolowtohigh,xx to low takes tWb time ,tWB to to high takes tRST time
     },
     'sync_reset': {
         'cmd1': 0xFC,
@@ -27,14 +29,16 @@ cmds = {
         'await_data': False,
         'CLE': 1,
         'ALE': 0,
-        'WE': 1,
+        'W/R_n': 1,
         'RE': 0,
-        'CE': 1
+        'CE': 1,
+        'DQS':1
+##R/B_n xxtolowtohigh,xx to low takes tWb time ,tWB to to high takes tRST time
     },
     'reset_lun': {
-        'cmd1': 0x00,
+        'cmd1': 0xFA,
         'addr_len': 3,
-        'cmd2': 0xFA,
+        'cmd2': None,
         'data': None,
         'await_data': False,
         'CLE': 1,
@@ -45,31 +49,28 @@ cmds = {
     },
     'read_device_id': {
         'cmd1': 0x90,
-        'addr_len': 1,
+        'addr_len': 1,##address value is always 20h, 00h JEDEc manufacturer ID
         'cmd2': None,
         'data': None,
-        'await_data': True,
+        'await_data': True, ##6 cycles of DOUT will be received
         'CLE': 1,
         'ALE': 1,
         'WE': 1,
         'RE': 0,
-        'CE': 1
+        'CE': 1,
+        'R/B_n':1
     },
     'read_param_page': {
         'cmd1': 0xEC,
-        'addr_len': 1,
+        'addr_len': 1,##00h
         'cmd2': None,
         'data': None,
         'await_data': True,
-        'CLE': 1,
-        'ALE': 1,
-        'WE': 1,
-        'RE': 0,
-        'CE': 1
+        'R/B_n':1
     },
     'read_unique_id': {
         'cmd1': 0xED,
-        'addr_len': 1,
+        'addr_len': 1,##00h
         'cmd2': None,
         'data': None,
         'await_data': True,
@@ -77,11 +78,12 @@ cmds = {
         'ALE': 1,
         'WE': 1,
         'RE': 0,
-        'CE': 1
+        'CE': 1,
+        'R/B_n':1 ##High till tWB,then low till tR,cecomes high DQ arrives within tRR
     },
     'block_erase': {
         'cmd1': 0x60,
-        'addr_len': 3,
+        'addr_len': 3,## R1+R2+R3 for 3 addr
         'cmd2': 0xD0,
         'data': None,
         'await_data': False,
@@ -89,7 +91,7 @@ cmds = {
         'ALE': 1,
         'WE': 1,
         'RE': 0,
-        'CE': 1
+        'CE': 1, ##SR[6] to be added here 
     },
     'read_status': {
         'cmd1': 0x70,
@@ -128,7 +130,7 @@ cmds = {
         'CE': 1
     },
     'read_cache_sequential': {
-        'cmd1': 0x31,
+        'cmd1': 0x31, ##after read
         'addr_len': None,
         'cmd2': None,
         'data': None,
@@ -137,7 +139,7 @@ cmds = {
         'ALE': 0,
         'WE': 1,
         'RE': 1,
-        'CE': 1
+        'CE': 1 ##SR[6] to be added
     },
     'read_cache_random': {
         'cmd1': 0x00,
@@ -151,7 +153,7 @@ cmds = {
         'RE': 1,
         'CE': 1
     },
-    'copyback_read': {
+    'copyback_read': { ##SR[6] to be added 
         'cmd1': 0x00,
         'addr_len': 5,
         'cmd2': 0x35,
@@ -180,14 +182,14 @@ cmds = {
         'addr_len': 5,
         'cmd2': 0xE0,
         'data': None,
-        'await_data': False,
+        'await_data': True,
         'CLE': 1,
         'ALE': 1,
         'WE': 1,
         'RE': 1,
         'CE': 1
     },
-    'copyback_program_with_data_mod': {
+    'copyback_program_with_data_mod': { ##Not solved
         'cmd1': 0x85,
         'addr_len': 5,
         'cmd2': 0x10,
@@ -201,7 +203,7 @@ cmds = {
     },
     'zq_calibration_long': {
         'cmd1': 0xF9,
-        'addr_len': None,
+        'addr_len': 1,
         'cmd2': None,
         'data': None,
         'await_data': False,
@@ -209,11 +211,12 @@ cmds = {
         'ALE': 0,
         'WE': 1,
         'RE': 0,
-        'CE': 1
+        'CE': 1,
+        'R/B_n':0 ## to 0 first in tWB time , stays 0 for tZQCL and then becomes 1
     },
     'zq_calibration_short': {
         'cmd1': 0xFB,
-        'addr_len': None,
+        'addr_len':1,
         'cmd2': None,
         'data': None,
         'await_data': False,
@@ -221,23 +224,25 @@ cmds = {
         'ALE': 0,
         'WE': 1,
         'RE': 0,
-        'CE': 1
+        'CE': 1,
+        'R/B_n':0 ## to 0 first in tWB time , stays 0 for tZQCL and then becomes 1
     },
-    'get_feature': {
+    'get_feature': {## tWB+tFEAT+tRR
         'cmd1': 0xEE,
         'addr_len': 1,
         'cmd2': None,
         'data': None,
-        'await_data': True,
+        'await_data': True,##4 bytes
         'CLE': 1,
         'ALE': 1,
         'WE': 1,
         'RE': 1,
-        'CE': 1
+        'CE': 1,
+        'R/B_n':0 ##becomes 0 in tWB time , stays 0 for tFEAT+trr,goes back to 1
     },
-    'set_feature': {
+    'set_feature': {##add tADL
         'cmd1': 0xEF,
-        'addr_len': 1,
+        'addr_len': 1,##Might be more reminder to check again for LUN set features
         'cmd2': None,
         'data': [0x00, 0x00, 0x00, 0x00],  
         'await_data': False,
@@ -245,7 +250,8 @@ cmds = {
         'ALE': 1,
         'WE': 1,
         'RE': 0,
-        'CE': 1
+        'CE': 1,
+        'R/B_n':0 
     },
     'read_page': {
         'cmd1': 0x00,
@@ -331,7 +337,7 @@ cmds = {
         'RE': 1,
         'CE': 1
     },
-    'two_plane_page_read': {
+    'multi_plane_page_read': {
         'cmd1': 0x00,
         'addr_len': 5,
         'cmd2': 0x32,
@@ -343,7 +349,7 @@ cmds = {
         'RE': 1,
         'CE': 1
     },
-    'two_plane_page_program': {
+    'multi_plane_page_program': {
         'cmd1': 0x80,
         'addr_len': 5,
         'cmd2': 0x11,
@@ -355,7 +361,7 @@ cmds = {
         'RE': 0,
         'CE': 1
     },
-    'two_plane_block_erase': {
+    'multi_plane_block_erase': {
         'cmd1': 0x60,
         'addr_len': 3,
         'cmd2': 0xD1,
