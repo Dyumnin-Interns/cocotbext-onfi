@@ -53,7 +53,7 @@ async def test_opcodes(dut):
         await RisingEdge(dut.iSystemClock)
         
         # Send the opcode
-        await driver._driver_send(opcode, delay_after_opcode=1000)  # Adjust the method if needed
+        await driver._driver_send(opcode, delay_after_opcode=1000)  
 
         # Optionally wait for some time to let the DUT process the opcode
         await Timer(1000, units='ns')
