@@ -1,0 +1,511 @@
+# do sim_build/runsim.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap -c 
+# ** Warning: vmap will not overwrite local modelsim.ini.
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work sim_build/work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:41:33 on Sep 17,2024
+# vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYCTRL.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUFG.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IOBUF.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/OBUF.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD_1.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUF.v ../hdl/NandFlashcontroller/lib/axis/rtl/arbiter.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_adapter.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_arb_mux.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo_adapter.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_broadcast.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_decode.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_encode.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_crosspoint.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_demux.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo_adapter.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_join.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust_fifo.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_len.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_ll_bridge.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_mux.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_pipeline_register.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_ram_switch.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_rate_limit.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_register.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_fifo.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_register.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_stat_counter.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_switch.v ../hdl/NandFlashcontroller/lib/axis/rtl/axis_tap.v ../hdl/NandFlashcontroller/lib/axis/rtl/ll_axis_bridge.v ../hdl/NandFlashcontroller/lib/axis/rtl/priority_encoder.v ../hdl/NandFlashcontroller/lib/axis/rtl/sync_reset.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/arbiter.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma_desc_mux.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_addr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_desc_mux.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dp_ram.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_interconnect.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_rd_if.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_if.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_rd_if.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_dp_ram.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_interconnect.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_ram.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_rd.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_wr.v ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/priority_encoder.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Async.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Sync.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Async.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Async.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Sync.v ../hdl/NandFlashcontroller/rtl/NFC_Command_Reset.v ../hdl/NandFlashcontroller/rtl/NFC_Command_SetFeature.v ../hdl/NandFlashcontroller/rtl/NFC_Command_GetFeature.v ../hdl/NandFlashcontroller/rtl/NFC_Command_EraseBlock.v ../hdl/NandFlashcontroller/rtl/NFC_Command_ProgramPage.v ../hdl/NandFlashcontroller/rtl/NFC_Command_ReadPage.v ../hdl/NandFlashcontroller/rtl/NFC_Command_ReadStatus.v ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_to_Atom_Command_Generator_Mux.v ../hdl/NandFlashcontroller/rtl/NFC_Command_Idle.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v ../hdl/NandFlashcontroller/rtl/NFC_Physical_Top.v ../hdl/NandFlashcontroller/rtl/NFC_Pinpad.v ../hdl/NandFlashcontroller/rtl/NandFlashController_Top.v ../hdl/NandFlashcontroller/rtl/NandFlashController_Top_AXI.v ../hdl/NandFlashcontroller/rtl/NandFlashController_AXIL_Reg.v ../hdl/NandFlashcontroller/rtl/NandFlashController_Interface_adapter.v ../hdl/NandFlashcontroller/rtl/NFC_Atom_Idle.v ../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top_AXI.v ../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top.v ../hdl/NandFlashcontroller/tb/tb_NFC_Atom_Command_Generator_Top.v ../hdl/NandFlashcontroller/tb/tb_NFC_Command_Issue_Top.v ../hdl/NandFlashcontroller/tb/tb_NFC_Physical_Top.v 
+# -- Compiling module IDELAYCTRL
+# -- Compiling module IDELAYE2
+# -- Compiling module IBUFG
+# -- Compiling module FIFO36E1
+# -- Compiling module ODDR
+# -- Compiling module IOBUF
+# -- Compiling module OBUF
+# -- Compiling module FD
+# -- Compiling module FD_1
+# -- Compiling module IDDR
+# -- Compiling module IBUF
+# -- Compiling module arbiter
+# -- Compiling module axis_adapter
+# -- Compiling module axis_arb_mux
+# -- Compiling module axis_async_fifo
+# -- Compiling module axis_async_fifo_adapter
+# -- Compiling module axis_broadcast
+# -- Compiling module axis_cobs_decode
+# -- Compiling module axis_cobs_encode
+# -- Compiling module axis_crosspoint
+# -- Compiling module axis_demux
+# -- Compiling module axis_fifo
+# -- Compiling module axis_fifo_adapter
+# -- Compiling module axis_frame_join
+# -- Compiling module axis_frame_length_adjust
+# -- Compiling module axis_frame_length_adjust_fifo
+# -- Compiling module axis_frame_len
+# -- Compiling module axis_ll_bridge
+# -- Compiling module axis_mux
+# -- Compiling module axis_pipeline_register
+# -- Compiling module axis_ram_switch
+# -- Compiling module axis_rate_limit
+# -- Compiling module axis_register
+# -- Compiling module axis_srl_fifo
+# -- Compiling module axis_srl_register
+# -- Compiling module axis_stat_counter
+# -- Compiling module axis_switch
+# -- Compiling module axis_tap
+# -- Compiling module ll_axis_bridge
+# -- Compiling module priority_encoder
+# -- Compiling module sync_reset
+# ** Warning: ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/arbiter.v(32): (vlog-2275) 'arbiter' already exists and will be overwritten.
+# -- Compiling module arbiter
+# -- Compiling module axi_adapter_rd
+# -- Compiling module axi_adapter
+# -- Compiling module axi_adapter_wr
+# -- Compiling module axi_axil_adapter_rd
+# -- Compiling module axi_axil_adapter
+# -- Compiling module axi_axil_adapter_wr
+# -- Compiling module axi_cdma_desc_mux
+# -- Compiling module axi_cdma
+# -- Compiling module axi_crossbar_addr
+# -- Compiling module axi_crossbar_rd
+# -- Compiling module axi_crossbar
+# -- Compiling module axi_crossbar_wr
+# -- Compiling module axi_dma_desc_mux
+# -- Compiling module axi_dma_rd
+# -- Compiling module axi_dma
+# -- Compiling module axi_dma_wr
+# -- Compiling module axi_dp_ram
+# -- Compiling module axi_fifo_rd
+# -- Compiling module axi_fifo
+# -- Compiling module axi_fifo_wr
+# -- Compiling module axi_interconnect
+# -- Compiling module axi_ram_rd_if
+# -- Compiling module axi_ram
+# -- Compiling module axi_ram_wr_if
+# -- Compiling module axi_ram_wr_rd_if
+# -- Compiling module axi_register_rd
+# -- Compiling module axi_register
+# -- Compiling module axi_register_wr
+# -- Compiling module axil_adapter_rd
+# -- Compiling module axil_adapter
+# -- Compiling module axil_adapter_wr
+# -- Compiling module axil_cdc_rd
+# -- Compiling module axil_cdc
+# -- Compiling module axil_cdc_wr
+# -- Compiling module axil_dp_ram
+# -- Compiling module axil_interconnect
+# -- Compiling module axil_ram
+# -- Compiling module axil_register_rd
+# -- Compiling module axil_register
+# -- Compiling module axil_register_wr
+# ** Warning: ../hdl/NandFlashcontroller/lib/verilog-axi/rtl/priority_encoder.v(32): (vlog-2275) 'priority_encoder' already exists and will be overwritten.
+# -- Compiling module priority_encoder
+# -- Compiling module NFC_Atom_Command_Async
+# -- Compiling module NFC_Atom_Command_Sync
+# -- Compiling module NFC_Atom_Datainput_Async
+# -- Compiling module NFC_Atom_Datainput_Sync
+# -- Compiling module NFC_Atom_Dataoutput_Async
+# -- Compiling module NFC_Atom_Dataoutput_Sync
+# -- Compiling module NFC_Command_Reset
+# -- Compiling module NFC_Command_SetFeature
+# -- Compiling module NFC_Command_GetFeature
+# -- Compiling module NFC_Command_EraseBlock
+# -- Compiling module NFC_Command_ProgramPage
+# -- Compiling module NFC_Command_ReadPage
+# -- Compiling module NFC_Command_ReadStatus
+# -- Compiling module NFC_Command_Issue_Top
+# -- Compiling module NFC_Atom_Command_Issue_to_Atom_Command_Generator_Mux
+# -- Compiling module NFC_Command_Idle
+# -- Compiling module NFC_Atom_Command_Generator_Top
+# -- Compiling module NFC_Atom_Command_Generator_to_Physical_Mux
+# -- Compiling module NFC_Physical_Input
+# -- Compiling module NFC_Physical_Output
+# -- Compiling module NFC_Physical_Top
+# -- Compiling module NFC_Pinpad
+# -- Compiling module NandFlashController_Top
+# -- Compiling module NandFlashController_Top_AXI
+# -- Compiling module NandFlashController_AXIL_Reg
+# -- Compiling module NandFlashController_Interface_adapter
+# -- Compiling module NFC_Atom_Command_Idle
+# -- Compiling module tb_NandFlashController_Top_AXI
+# -- Compiling module tb_NandFlashController_Top
+# -- Compiling module tb_NFC_Atom_Command_Generator_Top
+# -- Compiling module tb_NFC_Command_Issue_Top
+# -- Compiling module tb_NFC_Physical_Top
+# 
+# Top level modules:
+# 	axis_arb_mux
+# 	axis_broadcast
+# 	axis_cobs_decode
+# 	axis_cobs_encode
+# 	axis_crosspoint
+# 	axis_demux
+# 	axis_fifo_adapter
+# 	axis_frame_join
+# 	axis_frame_length_adjust_fifo
+# 	axis_frame_len
+# 	axis_ll_bridge
+# 	axis_mux
+# 	axis_pipeline_register
+# 	axis_ram_switch
+# 	axis_rate_limit
+# 	axis_srl_fifo
+# 	axis_srl_register
+# 	axis_stat_counter
+# 	axis_switch
+# 	axis_tap
+# 	ll_axis_bridge
+# 	sync_reset
+# 	axi_adapter
+# 	axi_axil_adapter
+# 	axi_cdma_desc_mux
+# 	axi_cdma
+# 	axi_crossbar
+# 	axi_dma_desc_mux
+# 	axi_dp_ram
+# 	axi_fifo
+# 	axi_interconnect
+# 	axi_register
+# 	axil_adapter
+# 	axil_cdc
+# 	axil_dp_ram
+# 	axil_interconnect
+# 	axil_ram
+# 	axil_register
+# 	NFC_Atom_Datainput_Async
+# 	tb_NandFlashController_Top_AXI
+# 	tb_NandFlashController_Top
+# 	tb_NFC_Atom_Command_Generator_Top
+# 	tb_NFC_Command_Issue_Top
+# 	tb_NFC_Physical_Top
+# End time: 18:41:33 on Sep 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim -onfinish exit -pli "/home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_modelsim.so" sim_build/work.NandFlashController_Top 
+# Start time: 18:41:33 on Sep 17,2024
+# Loading sv_std.std
+# Loading sim_build/work.NandFlashController_Top
+# Loading sim_build/work.NFC_Command_Issue_Top
+# Loading sim_build/work.NFC_Command_Idle
+# Loading sim_build/work.NFC_Command_Reset
+# Loading sim_build/work.NFC_Command_SetFeature
+# Loading sim_build/work.NFC_Command_ProgramPage
+# Loading sim_build/work.NFC_Command_ReadPage
+# Loading sim_build/work.NFC_Command_GetFeature
+# Loading sim_build/work.NFC_Command_EraseBlock
+# Loading sim_build/work.NFC_Command_ReadStatus
+# Loading sim_build/work.NFC_Atom_Command_Issue_to_Atom_Command_Generator_Mux
+# Loading sim_build/work.axis_fifo
+# Loading sim_build/work.NFC_Atom_Command_Generator_Top
+# Loading sim_build/work.NFC_Atom_Command_Idle
+# Loading sim_build/work.NFC_Atom_Command_Async
+# Loading sim_build/work.NFC_Atom_Command_Sync
+# Loading sim_build/work.NFC_Atom_Dataoutput_Async
+# Loading sim_build/work.NFC_Atom_Dataoutput_Sync
+# Loading sim_build/work.NFC_Atom_Datainput_Sync
+# Loading sim_build/work.NFC_Atom_Command_Generator_to_Physical_Mux
+# Loading sim_build/work.NFC_Physical_Top
+# Loading sim_build/work.NFC_Physical_Input
+# Loading sim_build/work.IDELAYCTRL
+# Loading sim_build/work.IDELAYE2
+# Loading sim_build/work.IBUFG
+# Loading sim_build/work.FIFO36E1
+# Loading sim_build/work.NFC_Physical_Output
+# Loading sim_build/work.ODDR
+# Loading sim_build/work.NFC_Pinpad
+# Loading sim_build/work.IOBUF
+# Loading sim_build/work.OBUF
+# Loading sim_build/work.IDDR
+# Loading sim_build/work.FD
+# Loading sim_build/work.FD_1
+# Loading sim_build/work.IBUF
+# ** Warning: (vsim-3017) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(780): [TFMPC] - Too few port connections. Expected 21, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Command_Issue_Top/write_fifo File: ../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo.v
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(780): [TFMPC] - Missing connection for port 's_axis_tid'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(780): [TFMPC] - Missing connection for port 's_axis_tdest'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(780): [TFMPC] - Missing connection for port 's_axis_tuser'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(780): [TFMPC] - Missing connection for port 'm_axis_tid'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(780): [TFMPC] - Missing connection for port 'm_axis_tdest'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(780): [TFMPC] - Missing connection for port 'm_axis_tuser'.
+# ** Warning: (vsim-3017) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(818): [TFMPC] - Too few port connections. Expected 21, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Command_Issue_Top/read_fifo File: ../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo.v
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(818): [TFMPC] - Missing connection for port 's_axis_tid'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(818): [TFMPC] - Missing connection for port 's_axis_tdest'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(818): [TFMPC] - Missing connection for port 's_axis_tuser'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(818): [TFMPC] - Missing connection for port 'm_axis_tid'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(818): [TFMPC] - Missing connection for port 'm_axis_tdest'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v(818): [TFMPC] - Missing connection for port 'm_axis_tuser'.
+# ** Warning: (vsim-3017) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v(420): [TFMPC] - Too few port connections. Expected 21, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Atom_Command_Generator_Top/inst_NFC_Atom_Datainput_Sync/inst_axis_fifo File: ../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo.v
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v(420): [TFMPC] - Missing connection for port 's_axis_tid'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v(420): [TFMPC] - Missing connection for port 's_axis_tdest'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v(420): [TFMPC] - Missing connection for port 's_axis_tuser'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v(420): [TFMPC] - Missing connection for port 'm_axis_tid'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v(420): [TFMPC] - Missing connection for port 'm_axis_tdest'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v(420): [TFMPC] - Missing connection for port 'm_axis_tuser'.
+# ** Warning: (vsim-3017) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Too few port connections. Expected 81, found 70.
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Atom_Command_Generator_Top/inst_NFC_Atom_Command_Generator_to_Physical_Mux File: ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [PCDPC] - Port size (5) does not match connection size (1) for port 'iDLE_DelayTap'. The port definition is at: ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v(27).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Atom_Command_Generator_Top/inst_NFC_Atom_Command_Generator_to_Physical_Mux File: ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [PCDPC] - Port size (5) does not match connection size (1) for port 'oACG_PHY_DelayTap'. The port definition is at: ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v(112).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Atom_Command_Generator_Top/inst_NFC_Atom_Command_Generator_to_Physical_Mux File: ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_DQSOutEnable'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_DQOutEnable'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_DQStrobe'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_DQ'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_ChipEnable'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_ReadEnable'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_WriteEnable'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_AddressLatchEnable'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIA_CommandLatchEnable'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIS_DQStrobe'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v(535): [TFMPC] - Missing connection for port 'iDIS_DQ'.
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Top.v(157): [PCDPC] - Port size (4) does not match connection size (1) for port 'oPI_ValidFlag'. The port definition is at: ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(34).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input File: ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(100): [PCDPC] - Port size (1) does not match connection size (32) for port 'RST'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYCTRL.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/Inst_DQSIDELAYCTRL File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYCTRL.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(116): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/Inst_DQSIDELAY File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(116): [PCDPC] - Port size (1) does not match connection size (32) for port 'CINVCTRL'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/Inst_DQSIDELAY File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(116): [PCDPC] - Port size (1) does not match connection size (32) for port 'DATAIN'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/Inst_DQSIDELAY File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(116): [PCDPC] - Port size (1) does not match connection size (32) for port 'INC'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/Inst_DQSIDELAY File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(116): [PCDPC] - Port size (1) does not match connection size (32) for port 'LDPIPEEN'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/Inst_DQSIDELAY File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(116): [PCDPC] - Port size (1) does not match connection size (32) for port 'REGRST'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/Inst_DQSIDELAY File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[0]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'R'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[0]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'S'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[0]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[1]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'R'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[1]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'S'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[1]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[2]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'R'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[2]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'S'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[2]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[3]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'R'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[3]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'S'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[3]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[4]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'R'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[4]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'S'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[4]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[5]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'R'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[5]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'S'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[5]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[6]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'R'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[6]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'S'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[6]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[7]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'R'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[7]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(181): [PCDPC] - Port size (1) does not match connection size (32) for port 'S'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/DQIDDRBits[7]/Inst_DQIDDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+# ** Warning: (vsim-3017) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [TFMPC] - Too few port connections. Expected 24, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/FIFO36E1_inst File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [PCDPC] - Port size (64) does not match connection size (32) for port 'DO'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/FIFO36E1_inst File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [PCDPC] - Port size (13) does not match connection size (12) for port 'RDCOUNT'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/FIFO36E1_inst File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [PCDPC] - Port size (13) does not match connection size (12) for port 'WRCOUNT'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/FIFO36E1_inst File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [PCDPC] - Port size (64) does not match connection size (32) for port 'DI'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/FIFO36E1_inst File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [PCDPC] - Port size (8) does not match connection size (4) for port 'DIP'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Input/FIFO36E1_inst File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [TFMPC] - Missing connection for port 'DBITERR'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [TFMPC] - Missing connection for port 'ECCPARITY'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [TFMPC] - Missing connection for port 'SBITERR'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [TFMPC] - Missing connection for port 'INJECTDBITERR'.
+# ** Warning: (vsim-3722) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v(368): [TFMPC] - Missing connection for port 'INJECTSBITERR'.
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(69): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/Inst_DQSODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(86): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/Inst_DQSTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(107): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[0]/Inst_DQODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(124): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[0]/Inst_DQTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(107): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[1]/Inst_DQODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(124): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[1]/Inst_DQTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(107): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[2]/Inst_DQODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(124): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[2]/Inst_DQTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(107): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[3]/Inst_DQODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(124): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[3]/Inst_DQTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(107): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[4]/Inst_DQODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(124): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[4]/Inst_DQTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(107): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[5]/Inst_DQODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(124): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[5]/Inst_DQTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(107): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[6]/Inst_DQODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(124): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[6]/Inst_DQTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(107): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[7]/Inst_DQODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(124): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/DQODDRBits[7]/Inst_DQTODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(146): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/CEODDRBits[0]/Inst_CEODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(146): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/CEODDRBits[1]/Inst_CEODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(165): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/Inst_REODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(182): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/Inst_WEODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(199): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/Inst_ALEODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# ** Warning: (vsim-3015) ../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v(216): [PCDPC] - Port size (1) does not match connection size (32) for port 'CE'. The port definition is at: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /NandFlashController_Top/inst_NFC_Physical_Top/Inst_NFC_Physical_Output/Inst_CLEODDR File: /opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+# Loading /home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_modelsim.so
+#      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:108  in set_program_name_in_venv        Using Python virtual environment interpreter at /home/om/venv2/bin/python
+#      -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libcocotbvpi_modelsim.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libgpi.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libgpilog.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libcocotbutils.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libembed.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/om/.pyenv/versions/3.11.3/lib/libpython3.11.so.1.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libcocotb.so : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /home/om/venv2/lib/python3.11/site-packages/cocotb/libs/libpygpilog.so : module was loaded at an absolute address.
+#      0.00ns INFO     cocotb                             Running on ModelSim - INTEL FPGA STARTER EDITION version 10.5b 2016.10
+#      0.00ns INFO     cocotb                             Running tests with cocotb v1.9.1 from /home/om/venv2/lib/python3.11/site-packages/cocotb
+#      0.00ns INFO     cocotb                             Seeding Python random module with 1726578694
+#      0.00ns INFO     cocotb.regression                  pytest not found, install it to enable better AssertionError messages
+#      0.00ns INFO     cocotb.regression                  Found test test_onfi.test_bus_signal_expansion
+#      0.00ns INFO     cocotb.regression                  Found test test_onfi.test_opcodes
+#      0.00ns INFO     cocotb.regression                  running test_bus_signal_expansion (1/2)
+# Renaming signal O_NAND_RE to RE_0_n
+# Renaming signal O_NAND_RE to RE_1_n
+# Warning: Signal RE_0_c (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal RE_1_c (or one of []) does not exist in the DUT. Skipping.
+# Renaming signal O_NAND_WE to WR_0_n
+# Renaming signal O_NAND_WE to WR_1_n
+# Renaming signal O_NAND_CE to CE_0_n
+# Renaming signal O_NAND_CE to CE_1_n
+# Warning: Signal Vcc (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal VccQ (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal Vss (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal VssQ (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal VREFQ_0 (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal VREFQ_1 (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal Vpp (or one of [None]) does not exist in the DUT. Skipping.
+# Renaming signal O_NAND_CLE to CLE_0
+# Renaming signal O_NAND_CLE to CLE_1
+# Renaming signal O_NAND_ALE to ALE_0
+# Renaming signal O_NAND_ALE to ALE_1
+# Renaming signal O_NAND_WE to WE_0_n
+# Renaming signal O_NAND_WE to WE_1_n
+# Warning: Signal CLK_0 (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal CLK_1 (or one of []) does not exist in the DUT. Skipping.
+# Renaming signal O_NAND_WP to WP_0_n
+# Renaming signal O_NAND_WP to WP_1_n
+# Warning: Signal IO0_0 (or one of ['DQ0_0', 'IO_NAND_DQ[0]']) does not exist in the DUT. Skipping.
+# Warning: Signal IO1_0 (or one of ['DQ1_0', 'IO_NAND_DQ[1]']) does not exist in the DUT. Skipping.
+# Warning: Signal IO2_0 (or one of ['DQ2_0', 'IO_NAND_DQ[2]']) does not exist in the DUT. Skipping.
+# Warning: Signal IO3_0 (or one of ['DQ3_0', 'IO_NAND_DQ[3]']) does not exist in the DUT. Skipping.
+# Warning: Signal IO4_0 (or one of ['DQ4_0', 'IO_NAND_DQ[4]']) does not exist in the DUT. Skipping.
+# Warning: Signal IO5_0 (or one of ['DQ5_0', 'IO_NAND_DQ[5]']) does not exist in the DUT. Skipping.
+# Warning: Signal IO6_0 (or one of ['DQ6_0', 'IO_NAND_DQ[6]']) does not exist in the DUT. Skipping.
+# Warning: Signal IO7_0 (or one of ['DQ7_0', 'IO_NAND_DQ[7]']) does not exist in the DUT. Skipping.
+# Warning: Signal IO8 (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal IO9 (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal IO10 (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal IO11 (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal IO12 (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal IO13 (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal IO14 (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal IO15 (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal IO0_1 (or one of ['DQ0_1']) does not exist in the DUT. Skipping.
+# Warning: Signal IO1_1 (or one of ['DQ1_1']) does not exist in the DUT. Skipping.
+# Warning: Signal IO2_1 (or one of ['DQ2_1']) does not exist in the DUT. Skipping.
+# Warning: Signal IO3_1 (or one of ['DQ3_1']) does not exist in the DUT. Skipping.
+# Warning: Signal IO4_1 (or one of ['DQ4_1']) does not exist in the DUT. Skipping.
+# Warning: Signal IO5_1 (or one of ['DQ5_1']) does not exist in the DUT. Skipping.
+# Warning: Signal IO6_1 (or one of ['DQ6_1']) does not exist in the DUT. Skipping.
+# Warning: Signal IO7_1 (or one of ['DQ7_1']) does not exist in the DUT. Skipping.
+# Renaming signal IO_NAND_DQS to DQS_0_t
+# Renaming signal IO_NAND_DQS to DQS_1_t
+# Warning: Signal DQS_0_c (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal DQS_1_c (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal DBI_0 (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal DBI_1 (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal ENo (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal ENi (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal VSP_0 (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal VSP_1 (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal R (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal RFT (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal NU (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal NC (or one of [None]) does not exist in the DUT. Skipping.
+# Warning: Signal ZQ_0 (or one of []) does not exist in the DUT. Skipping.
+# Warning: Signal ZQ_1 (or one of []) does not exist in the DUT. Skipping.
+# Renaming signal IO_NAND_DQ to IObus
+# Warning: Signal iEnable (or one of ['Enable']) does not exist in the DUT. Skipping.
+# Warning: Signal iControl (or one of ['Control']) does not exist in the DUT. Skipping.
+# Adding signal: inst_NFC_Physical_Top_RE_0_n
+# Adding signal: inst_NFC_Physical_Top_RE_1_n
+# Adding signal: inst_NFC_Physical_Top_WR_0_n
+# Adding signal: inst_NFC_Physical_Top_WR_1_n
+# Adding signal: inst_NFC_Physical_Top_CE_0_n
+# Adding signal: inst_NFC_Physical_Top_CE_1_n
+# Adding signal: inst_NFC_Physical_Top_CLE_0
+# Adding signal: inst_NFC_Physical_Top_CLE_1
+# Adding signal: inst_NFC_Physical_Top_ALE_0
+# Adding signal: inst_NFC_Physical_Top_ALE_1
+# Adding signal: inst_NFC_Physical_Top_WE_0_n
+# Adding signal: inst_NFC_Physical_Top_WE_1_n
+# Adding signal: inst_NFC_Physical_Top_WP_0_n
+# Adding signal: inst_NFC_Physical_Top_WP_1_n
+# Adding signal: inst_NFC_Physical_Top_DQS_0_t
+# Adding signal: inst_NFC_Physical_Top_DQS_1_t
+# Adding signal: inst_NFC_Physical_Top_IObus
+# Adding signal: inst_NFC_Physical_Top_iOpcode
+#      0.00ns INFO     cocotb.regression                  test_bus_signal_expansion passed
+#      0.00ns INFO     cocotb.regression                  running test_opcodes (2/2)
+#      0.60ns ERROR    cocotb.scheduler                   Failing test at simulator request before test run completion: Simulator shut down prematurely
+#      0.60ns ERROR    cocotb.regression                  Test error has lead to simulator shutting us down
+#      0.60ns INFO     cocotb.regression                  *********************************************************************************************
+#                                                         ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+#                                                         *********************************************************************************************
+#                                                         ** test_onfi.test_bus_signal_expansion   PASS           0.00           0.04          0.02  **
+#                                                         ** test_onfi.test_opcodes                FAIL           0.60           0.01         50.66  **
+#                                                         *********************************************************************************************
+#                                                         ** TESTS=2 PASS=1 FAIL=1 SKIP=0                         0.60           0.06          9.29  **
+#                                                         *********************************************************************************************
+#                                                         
+# ** Note: $finish    : UNKNOWN(-1)
+#    Time: 600 ps  Iteration: 1  Instance: /NandFlashController_Top File: ../hdl/NandFlashcontroller/rtl/NandFlashController_Top.v
+# End time: 18:41:34 on Sep 17,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 117
