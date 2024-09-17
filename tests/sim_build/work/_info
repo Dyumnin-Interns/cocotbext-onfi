@@ -1,0 +1,2878 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/om/tests/cocotbext-onfi/tests
+varbiter
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1726578693
+!i10b 1
+!s100 <d7GjobPiY`FTSimYbG]83
+I`9PPVYQaSc68M:F]@hhnW2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 IDELAYCTRL_v_unit
+S1
+R0
+Z5 w1722953295
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/arbiter.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/arbiter.v
+Z6 L0 32
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1726578693.000000
+Z9 !s107 ../hdl/NandFlashcontroller/tb/tb_NFC_Physical_Top.v|../hdl/NandFlashcontroller/tb/tb_NFC_Command_Issue_Top.v|../hdl/NandFlashcontroller/tb/tb_NFC_Atom_Command_Generator_Top.v|../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top.v|../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top_AXI.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Idle.v|../hdl/NandFlashcontroller/rtl/NandFlashController_Interface_adapter.v|../hdl/NandFlashcontroller/rtl/NandFlashController_AXIL_Reg.v|../hdl/NandFlashcontroller/rtl/NandFlashController_Top_AXI.v|../hdl/NandFlashcontroller/rtl/NandFlashController_Top.v|../hdl/NandFlashcontroller/rtl/NFC_Pinpad.v|../hdl/NandFlashcontroller/rtl/NFC_Physical_Top.v|../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v|../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v|../hdl/NandFlashcontroller/rtl/NFC_Command_Idle.v|../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_to_Atom_Command_Generator_Mux.v|../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v|../hdl/NandFlashcontroller/rtl/NFC_Command_ReadStatus.v|../hdl/NandFlashcontroller/rtl/NFC_Command_ReadPage.v|../hdl/NandFlashcontroller/rtl/NFC_Command_ProgramPage.v|../hdl/NandFlashcontroller/rtl/NFC_Command_EraseBlock.v|../hdl/NandFlashcontroller/rtl/NFC_Command_GetFeature.v|../hdl/NandFlashcontroller/rtl/NFC_Command_SetFeature.v|../hdl/NandFlashcontroller/rtl/NFC_Command_Reset.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Sync.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Async.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Async.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Sync.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Async.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/priority_encoder.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_ram.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_interconnect.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_dp_ram.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_rd_if.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_if.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_rd_if.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_interconnect.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dp_ram.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_desc_mux.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_addr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma_desc_mux.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/arbiter.v|../hdl/NandFlashcontroller/lib/axis/rtl/sync_reset.v|../hdl/NandFlashcontroller/lib/axis/rtl/priority_encoder.v|../hdl/NandFlashcontroller/lib/axis/rtl/ll_axis_bridge.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_tap.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_switch.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_stat_counter.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_register.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_fifo.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_register.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_rate_limit.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_ram_switch.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_pipeline_register.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_mux.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_ll_bridge.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_len.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust_fifo.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_join.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo_adapter.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_demux.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_crosspoint.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_encode.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_decode.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_broadcast.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo_adapter.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_arb_mux.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_adapter.v|../hdl/NandFlashcontroller/lib/axis/rtl/arbiter.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUF.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD_1.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/OBUF.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IOBUF.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUFG.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYCTRL.v|
+Z10 !s90 -work|work|+define+COCOTB_SIM|-sv|-timescale|1ns/1ps|-mfcu|+acc|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYCTRL.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUFG.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IOBUF.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/OBUF.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD_1.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v|/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUF.v|../hdl/NandFlashcontroller/lib/axis/rtl/arbiter.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_adapter.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_arb_mux.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo_adapter.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_broadcast.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_decode.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_encode.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_crosspoint.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_demux.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo_adapter.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_join.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust_fifo.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_len.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_ll_bridge.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_mux.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_pipeline_register.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_ram_switch.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_rate_limit.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_register.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_fifo.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_register.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_stat_counter.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_switch.v|../hdl/NandFlashcontroller/lib/axis/rtl/axis_tap.v|../hdl/NandFlashcontroller/lib/axis/rtl/ll_axis_bridge.v|../hdl/NandFlashcontroller/lib/axis/rtl/priority_encoder.v|../hdl/NandFlashcontroller/lib/axis/rtl/sync_reset.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/arbiter.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma_desc_mux.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_addr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_desc_mux.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dp_ram.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_interconnect.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_rd_if.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_if.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_rd_if.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_dp_ram.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_interconnect.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_ram.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_rd.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_wr.v|../hdl/NandFlashcontroller/lib/verilog-axi/rtl/priority_encoder.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Async.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Sync.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Async.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Async.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Sync.v|../hdl/NandFlashcontroller/rtl/NFC_Command_Reset.v|../hdl/NandFlashcontroller/rtl/NFC_Command_SetFeature.v|../hdl/NandFlashcontroller/rtl/NFC_Command_GetFeature.v|../hdl/NandFlashcontroller/rtl/NFC_Command_EraseBlock.v|../hdl/NandFlashcontroller/rtl/NFC_Command_ProgramPage.v|../hdl/NandFlashcontroller/rtl/NFC_Command_ReadPage.v|../hdl/NandFlashcontroller/rtl/NFC_Command_ReadStatus.v|../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v|../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_to_Atom_Command_Generator_Mux.v|../hdl/NandFlashcontroller/rtl/NFC_Command_Idle.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v|../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v|../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v|../hdl/NandFlashcontroller/rtl/NFC_Physical_Top.v|../hdl/NandFlashcontroller/rtl/NFC_Pinpad.v|../hdl/NandFlashcontroller/rtl/NandFlashController_Top.v|../hdl/NandFlashcontroller/rtl/NandFlashController_Top_AXI.v|../hdl/NandFlashcontroller/rtl/NandFlashController_AXIL_Reg.v|../hdl/NandFlashcontroller/rtl/NandFlashController_Interface_adapter.v|../hdl/NandFlashcontroller/rtl/NFC_Atom_Idle.v|../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top_AXI.v|../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top.v|../hdl/NandFlashcontroller/tb/tb_NFC_Atom_Command_Generator_Top.v|../hdl/NandFlashcontroller/tb/tb_NFC_Command_Issue_Top.v|../hdl/NandFlashcontroller/tb/tb_NFC_Physical_Top.v|
+!i113 1
+Z11 o-work work -sv -timescale 1ns/1ps -mfcu +acc
+Z12 !s92 -work work +define+COCOTB_SIM -sv -timescale 1ns/1ps -mfcu +acc
+Z13 tCvgOpt 0
+vaxi_adapter
+R1
+R2
+!i10b 1
+!s100 WRWgzb4>MF4V1e6zT9Pla1
+Iam1YOPkbFnh1@Z9aIRd:B2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_adapter_rd
+R1
+R2
+!i10b 1
+!s100 lhJ=1LoCHM52m6BiORm392
+Ie`XM_fnD;]T^N;PRg4GZ20
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_adapter_wr
+R1
+R2
+!i10b 1
+!s100 dWAQKKa]inYV@n_lVP>8;2
+IUHHSmmGZe<PC1n8B2YR9b0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_adapter_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_axil_adapter
+R1
+R2
+!i10b 1
+!s100 7]?cfhWfLVM@NZXzZ0Re?2
+IPO1=02eZ;=5NEQk?<PbI[2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_axil_adapter_rd
+R1
+R2
+!i10b 1
+!s100 M<1JgoAb7CBH;VGcQ;lPl3
+Id5g^X;8IDV@ORK5GA9UA=0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_axil_adapter_wr
+R1
+R2
+!i10b 1
+!s100 3;3a>H>cUXQ^[>>o:kzhj3
+IgC9VBa3_6aWmb_TkmaS>C2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_axil_adapter_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_cdma
+R1
+R2
+!i10b 1
+!s100 J=E6ieJKhVFKRL]m8a1ES3
+I7j^iknAX5d:[5=1G3NV:e2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_cdma_desc_mux
+R1
+R2
+!i10b 1
+!s100 [6dz5ECX[^NkTjk4nQ?`e2
+IS463O41FSR71cW<J?6n1z0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma_desc_mux.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_cdma_desc_mux.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_crossbar
+R1
+R2
+!i10b 1
+!s100 =e@2hTY89=<X?gId^Q;Cj0
+If2Fd4:Pe@O9K=AQJhbHPW3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_crossbar_addr
+R1
+R2
+!i10b 1
+!s100 <d3aUP1F6zeoVICgidMn;1
+IMjRE[PM95Ue:Q]klYMJbO2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_addr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_addr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_crossbar_rd
+R1
+R2
+!i10b 1
+!s100 68i3[]z52;lA@P?jccNz@0
+I;T]1Hl;7XgWeQRSSzfA_a0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_crossbar_wr
+R1
+R2
+!i10b 1
+!s100 2Poc0=S]Wz:SnNVK[0SDB3
+IdgQjDG`Qk9Bn?gi5CQXD_1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_crossbar_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_dma
+R1
+R2
+!i10b 1
+!s100 U4NjkW`:_d<VzMic6PPJd3
+IF^`>1f5hWkNPGC]bY2`;N2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_dma_desc_mux
+R1
+R2
+!i10b 1
+!s100 Sf]`_YNjSTPRL6d7O0nST1
+I891;Dfb99Q4k:d5B9D^5]2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_desc_mux.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_desc_mux.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_dma_rd
+R1
+R2
+!i10b 1
+!s100 UoiQOdobKTZASiYbe6C1A0
+I`ETdHjG3oC9WGgfofVXYj2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_dma_wr
+R1
+R2
+!i10b 1
+!s100 V29n6Ph7EA7Hl2lQhf08a3
+I>EoQ:>[CGJ;Ybod[]S^=>3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dma_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_dp_ram
+R1
+R2
+!i10b 1
+!s100 CohK[RzIQRHQf9Lj86dBz2
+IFlYgkMX_=;AH1m=QZ6cC81
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dp_ram.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_dp_ram.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_fifo
+R1
+R2
+!i10b 1
+!s100 EJb_4_:RX[e0WHYD`H4=`1
+I?Z^H51?7Kig7MVnXMMczV1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_fifo_rd
+R1
+R2
+!i10b 1
+!s100 h0h=:dGUKPeW7eaC8<_`l0
+IKN`CU>mLBkM[DKNSh8[e61
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_fifo_wr
+R1
+R2
+!i10b 1
+!s100 mnRA^lB9?U[INOhz48E2?3
+IXM163@?PeX[`ig0iE7Deb3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_fifo_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_interconnect
+R1
+R2
+!i10b 1
+!s100 m`L7No5]m@Y1N6cl8]5BH1
+IL3Sm9E>SkAUED3dZR;QaL0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_interconnect.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_interconnect.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_ram
+R1
+R2
+!i10b 1
+!s100 XSP1ISMDULASc4il_EjoK0
+IIKKKJE83n:UmUM]cCRhFQ0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_ram_rd_if
+R1
+R2
+!i10b 1
+!s100 K23H;[C0YfPV3l@i]4M6E0
+I`8kXo:I[je;o_>9:2ooC92
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_rd_if.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_rd_if.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_ram_wr_if
+R1
+R2
+!i10b 1
+!s100 QQd3d5R`Zg67`0RmYUB@f1
+IMI]KWCe7=Uj2SI=8Xe1D80
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_if.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_if.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_ram_wr_rd_if
+R1
+R2
+!i10b 1
+!s100 5cNdL:YJ=`@ZU`FmD0^=R1
+IGe6Ck8Xzgzl^ZG[j]VA4=3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_rd_if.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_ram_wr_rd_if.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_register
+R1
+R2
+!i10b 1
+!s100 H__4A_Y51HUi;3WI2SQnz2
+IYWM61oGKIVS6NnI^4LlVi3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_register_rd
+R1
+R2
+!i10b 1
+!s100 EgXaXmZZ0XMM;M2fIGVnM3
+IfDL50SH9[nkBmCSC^BU>B0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxi_register_wr
+R1
+R2
+!i10b 1
+!s100 aV0bCDjPZ670Knjd8l0CG2
+IUaNe1E0RUR6S@[8e>:6B;3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axi_register_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_adapter
+R1
+R2
+!i10b 1
+!s100 @U7nFhJG:[aH<z[^=Lk<L0
+I>XGim_iAUlWjUb_XO02053
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_adapter_rd
+R1
+R2
+!i10b 1
+!s100 h9;KHDWA0O]egezDFR=742
+I:9W2P]VOfMEQYAoh]Jh^Q0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_adapter_wr
+R1
+R2
+!i10b 1
+!s100 `>HaFXI^j`OL=PbXLQR;@0
+Io<R=6mMjAPfHA8`Y_4ObF2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_adapter_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_cdc
+R1
+R2
+!i10b 1
+!s100 9ibFP?PzA?j]z_`ReF90b3
+I?[K>zBnKJ1EoEDcL53OQ12
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_cdc_rd
+R1
+R2
+!i10b 1
+!s100 9dj48H`JkNj7Q9[`Xo=z=2
+IYVAMN[D=R5U]kWFz@kci92
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_cdc_wr
+R1
+R2
+!i10b 1
+!s100 YJoM]3R1ZFBdW>[>ROfc13
+I]bMH`dADS==XLBQbAMbX>2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_cdc_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_dp_ram
+R1
+R2
+!i10b 1
+!s100 0OhM4J>Mo]OALNA=dM7IK2
+I=3`0DC:HmGC]FYiK4zoQE2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_dp_ram.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_dp_ram.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_interconnect
+R1
+R2
+!i10b 1
+!s100 EA=``Iii3IM<DXcE<GS;W1
+IzC8<Ja?FnL`D_hHYN@zQ41
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_interconnect.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_interconnect.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_ram
+R1
+R2
+!i10b 1
+!s100 ]F653;3Id8hCYiD<0>QYK0
+IQnX@NLa_7lb^m[XYkLI>]0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_ram.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_ram.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_register
+R1
+R2
+!i10b 1
+!s100 ViGcm]RflUZgaVf3=K3Pe2
+IQ7DUeO?oD>7X:H<PP_Hfi0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_register_rd
+R1
+R2
+!i10b 1
+!s100 SPDnZgNjJh09=]HXfYkN:3
+INNIW`f>_S>e]QOAVUR@Pz0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_rd.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_rd.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxil_register_wr
+R1
+R2
+!i10b 1
+!s100 X3_AQm9@Fg_RaKEd[z@0f3
+IIRY=iSOPHjR`W5eO9`5602
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_wr.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/axil_register_wr.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_adapter
+R1
+R2
+!i10b 1
+!s100 EeZ3aJ`SOebQ6Ffjf3aRP3
+I;QijGjLnFVY9ion<KaVCj3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_adapter.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_adapter.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_arb_mux
+R1
+R2
+!i10b 1
+!s100 _hJ1]]S?NzCS;:D57X]mL3
+IS`7nVAU8:mSZ7]XW_IlhT2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_arb_mux.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_arb_mux.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_async_fifo
+R1
+R2
+!i10b 1
+!s100 H[`EAA?1AbGc5AP59BieT2
+IXh_P^oSYM::Y[DMC9:9gm0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_async_fifo_adapter
+R1
+R2
+!i10b 1
+!s100 MJ7K;=8mhSG]@7H6IL5Kd0
+I?LBa>jGHWOIa<Z^G3XKCP2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo_adapter.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_async_fifo_adapter.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_broadcast
+R1
+R2
+!i10b 1
+!s100 DZMzHcCj]9SiOe5[M1`<W2
+Ien>n:bNYo52j`6VPmjIF82
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_broadcast.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_broadcast.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_cobs_decode
+R1
+R2
+!i10b 1
+!s100 GH=zG5zJH@Lk]V2A265RN1
+I6S8GZ]fh;_Cf9UEC5_Wng0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_decode.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_decode.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_cobs_encode
+R1
+R2
+!i10b 1
+!s100 :DgRKAXYmKPJ8XK8^GmD41
+IVkMaI:R>7l7SCa=fEf9B50
+R3
+R4
+S1
+R0
+w1725372544
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_encode.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_cobs_encode.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_crosspoint
+R1
+R2
+!i10b 1
+!s100 ]IfaNWkGSTM^f;E^F>g>=0
+IgNnRg8:WUh<]fe?E>ekl41
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_crosspoint.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_crosspoint.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_demux
+R1
+R2
+!i10b 1
+!s100 CBP`f=QA1iX`nKi0QhCzB3
+IRXBPz3JidLi58]4P@lLaM1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_demux.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_demux.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_fifo
+R1
+R2
+!i10b 1
+!s100 U5959^R?m5I15X4zca4:h2
+I<WXTDYb<Ra4bN?kHCE]NS1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_fifo_adapter
+R1
+R2
+!i10b 1
+!s100 Lc_Bf[Ie3IOLjgV@iQd5C0
+INH2hdVd__zP`faSjlY6oT3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo_adapter.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_fifo_adapter.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_frame_join
+R1
+R2
+!i10b 1
+!s100 SgIOmHeQdS0MZ=bng:Tc[2
+I^h7?TXV@MeY0]D2lMlmUV1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_join.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_join.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_frame_len
+R1
+R2
+!i10b 1
+!s100 n6IX<N;m?5EZW_;00VM?a3
+I7^:^1:<;GTFTN^ifBd>2E3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_len.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_len.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_frame_length_adjust
+R1
+R2
+!i10b 1
+!s100 WMY=EFRAgH?khU53UzBb31
+IUzkD6Y:8Y5Z3G3^MYoX=H2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_frame_length_adjust_fifo
+R1
+R2
+!i10b 1
+!s100 SM;X1Q>CX@MDV42KWz3C83
+IMjgT1`c48E:aWI?2]nInB1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust_fifo.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_frame_length_adjust_fifo.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_ll_bridge
+R1
+R2
+!i10b 1
+!s100 iELg[d`?MC]HU_E8kfD]a2
+IcS3DAk]`5XOUA?l0^dneB2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_ll_bridge.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_ll_bridge.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_mux
+R1
+R2
+!i10b 1
+!s100 `?N1]g_ROl9<=gP:j6JPh2
+IX;1TP5fX^29Ea2jN7@SN^1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_mux.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_mux.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_pipeline_register
+R1
+R2
+!i10b 1
+!s100 iHEQl3jBe94X<EF@Nd8I]0
+IzF_M8QDVXSMF6JAAM9PbV2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_pipeline_register.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_pipeline_register.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_ram_switch
+R1
+R2
+!i10b 1
+!s100 b1jl1=Db8]h6Fh3inDJNh1
+IQb<]kU_WGeOK=Wb@9Xemc2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_ram_switch.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_ram_switch.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_rate_limit
+R1
+R2
+!i10b 1
+!s100 =z?gQ_PH=_LJWRon^OGMf0
+I>J<B8kI5j^l^4P_ReiNQL3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_rate_limit.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_rate_limit.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_register
+R1
+R2
+!i10b 1
+!s100 XOX@ZgWWA_YH9QOg5=1;h2
+IUS;c9WAh:=3bG^=]0d<LV0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_register.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_register.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_srl_fifo
+R1
+R2
+!i10b 1
+!s100 cE[6Wg0<A1YhYYIKSlXE:3
+I:[1=61bFHUN6L<G`S6;Y?0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_fifo.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_fifo.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_srl_register
+R1
+R2
+!i10b 1
+!s100 JIXF_ZHjM26CH2cF<7aTG1
+I@1l09YAUI1OCBfU91KAD22
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_register.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_srl_register.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_stat_counter
+R1
+R2
+!i10b 1
+!s100 :6ASdTYUQG^=HMMY31;=_1
+I0E=Oo=RgI8ozO0m]Vj>9W1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_stat_counter.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_stat_counter.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_switch
+R1
+R2
+!i10b 1
+!s100 ^4ET;gjhFUjCeRBiB>K5g1
+IoRMO1dBdlej6bhL2oPKVL1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_switch.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_switch.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vaxis_tap
+R1
+R2
+!i10b 1
+!s100 jBhHP[>`YU5HhcLoUi9HS2
+ICa8QJIT63Ejl904<cJzY`0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/axis_tap.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/axis_tap.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vFD
+R1
+R2
+!i10b 1
+!s100 6zYc:<aJ3;VWPY?PgYdn11
+I1NY^<0f@<Fl?Y:=8cROP42
+R3
+R4
+S1
+R0
+Z14 w1494599319
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD.v
+Z15 L0 12
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@f@d
+vFD_1
+R1
+R2
+!i10b 1
+!s100 WIikLoBQajlbVUGW;VWzc3
+IV[elHF8`V:^=eToYO]mU12
+R3
+R4
+S1
+R0
+R14
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD_1.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FD_1.v
+R15
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@f@d_1
+vFIFO36E1
+R1
+R2
+!i10b 1
+!s100 bB:SdI]P1I?mRfUVzD>2l2
+IC0<1@WYlkNBIh3mh;L:S93
+R3
+R4
+S1
+R0
+R14
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/FIFO36E1.v
+L0 22
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@f@i@f@o36@e1
+vIBUF
+R1
+R2
+!i10b 1
+!s100 J];AUoB8WDPRQ0=a2?fB[3
+IXOWg`mSUh0c<a4okg?D=Z2
+R3
+R4
+S1
+R0
+R14
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUF.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUF.v
+Z16 L0 23
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@i@b@u@f
+vIBUFG
+R1
+R2
+!i10b 1
+!s100 cZA1@_?CH4X3SPiALf6Fg0
+I9Zn4:UQo3LWA;;2MRLi3:2
+R3
+R4
+S1
+R0
+R14
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUFG.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IBUFG.v
+R16
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@i@b@u@f@g
+vIDDR
+R1
+R2
+!i10b 1
+!s100 DJ^LdzhB59M]6Mkz_3d:O0
+IbXQB5RoF;SZJYXCRcnRen2
+R3
+R4
+S1
+R0
+R14
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDDR.v
+L0 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@i@d@d@r
+vIDELAYCTRL
+R1
+R2
+!i10b 1
+!s100 9HZ2b2M3R51gPZOH6VYhM2
+IaST5;K?A9Yi7LLD_HURl33
+R3
+R4
+S1
+R0
+R14
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYCTRL.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYCTRL.v
+L0 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@i@d@e@l@a@y@c@t@r@l
+vIDELAYE2
+R1
+R2
+!i10b 1
+!s100 `@8zlRY1k7hWb4C>iWLbR2
+IQNzY8:c1lz^ecJ46?Wc3b2
+R3
+R4
+S1
+R0
+R14
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IDELAYE2.v
+L0 21
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@i@d@e@l@a@y@e2
+vIOBUF
+R1
+R2
+!i10b 1
+!s100 fLnh;]22k5@0e7^^S;ImH0
+IePl2f[cbXM7]f8=Nkjn?00
+R3
+R4
+S1
+R0
+R14
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IOBUF.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/IOBUF.v
+R16
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@i@o@b@u@f
+vll_axis_bridge
+R1
+R2
+!i10b 1
+!s100 hATU;zW^l@8h>Q3SAC8I92
+I2>57kbWQS4IA?kZ5<3dH72
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/ll_axis_bridge.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/ll_axis_bridge.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vNandFlashController_AXIL_Reg
+R1
+R2
+!i10b 1
+!s100 Tmm5YXBbe6UQhZUi4HMzF1
+I>N>k4GkJi]jk<;W[A@CZB3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NandFlashController_AXIL_Reg.v
+F../hdl/NandFlashcontroller/rtl/NandFlashController_AXIL_Reg.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@nand@flash@controller_@a@x@i@l_@reg
+vNandFlashController_Interface_adapter
+R1
+R2
+!i10b 1
+!s100 1MG2ddXQE=0>NhAJYCaCJ3
+I<cKCIJILkd51<I8IC=fde1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NandFlashController_Interface_adapter.v
+F../hdl/NandFlashcontroller/rtl/NandFlashController_Interface_adapter.v
+L0 4
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@nand@flash@controller_@interface_adapter
+vNandFlashController_Top
+R1
+R2
+!i10b 1
+!s100 lIk39Tg6LVGWWE1Q?e[2F1
+IN]Fgf1h3G]faVO[_iDhac0
+R3
+R4
+S1
+R0
+w1725974938
+8../hdl/NandFlashcontroller/rtl/NandFlashController_Top.v
+F../hdl/NandFlashcontroller/rtl/NandFlashController_Top.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@nand@flash@controller_@top
+vNandFlashController_Top_AXI
+R1
+R2
+!i10b 1
+!s100 A[P<X?8?@fZnhPLXTN3Hk0
+I:of5DTfB::WZZe@hHnACb0
+R3
+R4
+S1
+R0
+w1725521110
+8../hdl/NandFlashcontroller/rtl/NandFlashController_Top_AXI.v
+F../hdl/NandFlashcontroller/rtl/NandFlashController_Top_AXI.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@nand@flash@controller_@top_@a@x@i
+vNFC_Atom_Command_Async
+R1
+R2
+!i10b 1
+!s100 V:?KAcFN6he8dF1742dgO2
+IfC45Mf?n?F0@X08TL597H2
+R3
+R4
+S1
+R0
+w1725298261
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Async.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Async.v
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@command_@async
+vNFC_Atom_Command_Generator_to_Physical_Mux
+R1
+R2
+!i10b 1
+!s100 5<O@U0@hGX8hR:WdN7lVF2
+IiF0Ne<?`Vo0b8HiA4lgST1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_to_Physical_Mux.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@command_@generator_to_@physical_@mux
+vNFC_Atom_Command_Generator_Top
+R1
+R2
+!i10b 1
+!s100 C<C0`JLLigP;>8ZLU?_OA0
+IhK11cKzQ`7?RG]2izhWeY0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Generator_Top.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@command_@generator_@top
+vNFC_Atom_Command_Idle
+R1
+R2
+!i10b 1
+!s100 ?H0@V1:Oj3M8[]7?F1S?11
+IYOcGl[Nd9_[<RIi;OcC=B3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Idle.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Idle.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@command_@idle
+vNFC_Atom_Command_Issue_to_Atom_Command_Generator_Mux
+R1
+R2
+!i10b 1
+!s100 94Gb`nhPf89LM`VaXbC]93
+I91O>Wb8`Nl<MM>Bb602Ma0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_to_Atom_Command_Generator_Mux.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_to_Atom_Command_Generator_Mux.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@command_@issue_to_@atom_@command_@generator_@mux
+vNFC_Atom_Command_Sync
+R1
+R2
+!i10b 1
+!s100 ;0T36lPDBb>A2k^@2JP9g1
+Ij@VaIH54XOL4g_A5biHfA1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Sync.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Command_Sync.v
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@command_@sync
+vNFC_Atom_Datainput_Async
+R1
+R2
+!i10b 1
+!s100 aG9W=J4h0_BaQaR?aRICX0
+I?WMf^7fTke7:MgcNE=W0Q3
+R3
+R4
+S1
+R0
+w1725298258
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Async.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Async.v
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@datainput_@async
+vNFC_Atom_Datainput_Sync
+R1
+R2
+!i10b 1
+!s100 IXf2Y;JYORD6eeXY;PbUF1
+IDCm;`e778Ac2W37E82SR^1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Datainput_Sync.v
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@datainput_@sync
+vNFC_Atom_Dataoutput_Async
+R1
+R2
+!i10b 1
+!s100 WF2fnDOEk=9XUENjH=A5]1
+IAL[mhHJ`SDG5D50DC:kPU2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Async.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Async.v
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@dataoutput_@async
+vNFC_Atom_Dataoutput_Sync
+R1
+R2
+!i10b 1
+!s100 ?KbjF0C22Z?0ozEemLg]62
+IkWe52:zbG3>^X=?k_<?O=1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Sync.v
+F../hdl/NandFlashcontroller/rtl/NFC_Atom_Dataoutput_Sync.v
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@atom_@dataoutput_@sync
+vNFC_Command_EraseBlock
+R1
+R2
+!i10b 1
+!s100 SzMkXPOcc[Ln;XVnG7QCd3
+IO^99jAmhUg2AVE`Jh5C2]1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_EraseBlock.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_EraseBlock.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@erase@block
+vNFC_Command_GetFeature
+R1
+R2
+!i10b 1
+!s100 Zg9k6PRWh5ZL?fH@Tj10k0
+I[A2`L25^0YjRW^n[;jc0S0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_GetFeature.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_GetFeature.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@get@feature
+vNFC_Command_Idle
+R1
+R2
+!i10b 1
+!s100 74VWo9CnZDg7YSEWWDIWh3
+IWJf@=kJ5ko9KLzaBOajf>3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_Idle.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_Idle.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@idle
+vNFC_Command_Issue_Top
+R1
+R2
+!i10b 1
+!s100 3?IoV]gN_CIhXTZP`S[i32
+IgBZl3:?o97:S8]zeRnS[P3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_Issue_Top.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@issue_@top
+vNFC_Command_ProgramPage
+R1
+R2
+!i10b 1
+!s100 bD`>Ch;Ke7@YHzSnJ^@8O0
+IiL<`]5PEG2d2i`>7<GDf]0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_ProgramPage.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_ProgramPage.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@program@page
+vNFC_Command_ReadPage
+R1
+R2
+!i10b 1
+!s100 2<WTDacd<UO4k_8Cf05b90
+I[AS8Qk3KM=@jO@3K_QZ;H3
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_ReadPage.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_ReadPage.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@read@page
+vNFC_Command_ReadStatus
+R1
+R2
+!i10b 1
+!s100 i4f6g3[n<Q8a;DZ]CIhJU1
+IhKhf>nP4<_>@KnZI]:Ucl2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_ReadStatus.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_ReadStatus.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@read@status
+vNFC_Command_Reset
+R1
+R2
+!i10b 1
+!s100 ;;]NVcN^A38]oiZiYoG5Q2
+IZ:8RXlN[L27dV5ec5Iz1Y1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_Reset.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_Reset.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@reset
+vNFC_Command_SetFeature
+R1
+R2
+!i10b 1
+!s100 Y1AboA9mhllgbQ4m^EL=I1
+IKg6m:Ni3N]=FSiJF3bdEE0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Command_SetFeature.v
+F../hdl/NandFlashcontroller/rtl/NFC_Command_SetFeature.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@command_@set@feature
+vNFC_Physical_Input
+R1
+R2
+!i10b 1
+!s100 nlAX=Nh;`9MhKdf<E@^U01
+IXG:kNTG4>mZ;[g<Ce8l@V3
+R3
+R4
+S1
+R0
+w1725508838
+8../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v
+F../hdl/NandFlashcontroller/rtl/NFC_Physical_Input.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@physical_@input
+vNFC_Physical_Output
+R1
+R2
+!i10b 1
+!s100 C[>E_f@[13;C>Qjm<P1`[0
+IF0nkzmmQf93F<kXilo73l2
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v
+F../hdl/NandFlashcontroller/rtl/NFC_Physical_Output.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@physical_@output
+vNFC_Physical_Top
+R1
+R2
+!i10b 1
+!s100 0U;::GlHoc=_eU55DE`792
+I`Dm0aGWi_FbcBUgncc1[21
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Physical_Top.v
+F../hdl/NandFlashcontroller/rtl/NFC_Physical_Top.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@physical_@top
+vNFC_Pinpad
+R1
+R2
+!i10b 1
+!s100 6fz<kc7VPSnYG@cNLDbWS3
+IXPLGG>E^V]aVU2F1WKAFz1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/rtl/NFC_Pinpad.v
+F../hdl/NandFlashcontroller/rtl/NFC_Pinpad.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@n@f@c_@pinpad
+vOBUF
+R1
+R2
+!i10b 1
+!s100 R`V0o0:Bc^W5W`4XX3FWC3
+IziEBkWVUBk[:DW3iG3K1_0
+R3
+R4
+S1
+R0
+w1494599320
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/OBUF.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/OBUF.v
+R15
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@o@b@u@f
+vODDR
+R1
+R2
+!i10b 1
+!s100 bUkHM5z3VO5d97QNQ5WFD1
+I=k6DS^7aHj@kJS;h9fMJX0
+R3
+R4
+S1
+R0
+w1494599321
+8/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+F/opt/Xilinx/Vivado/2017.2/ids_lite/ISE/verilog/xeclib/unisims/ODDR.v
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+n@o@d@d@r
+vpriority_encoder
+R1
+R2
+!i10b 1
+!s100 hTR1l3Q4>0Q=25VECmW`]0
+I1McUgmXQQbdoA4=OYJ8R=0
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/verilog-axi/rtl/priority_encoder.v
+F../hdl/NandFlashcontroller/lib/verilog-axi/rtl/priority_encoder.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vsync_reset
+R1
+R2
+!i10b 1
+!s100 ARUO<6E3_W3TlBO^kNLc]0
+If4EBca8iY6kE5fjP1AH@_1
+R3
+R4
+S1
+R0
+R5
+8../hdl/NandFlashcontroller/lib/axis/rtl/sync_reset.v
+F../hdl/NandFlashcontroller/lib/axis/rtl/sync_reset.v
+L0 33
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vtb_NandFlashController_Top
+R1
+R2
+!i10b 1
+!s100 9QoHETnXDBCISGQBa`mcB3
+I521lD4cY5Y3n^f>8]3GV02
+R3
+R4
+S1
+R0
+w1725802985
+8../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top.v
+F../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top.v
+R16
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+ntb_@nand@flash@controller_@top
+vtb_NandFlashController_Top_AXI
+R1
+R2
+!i10b 1
+!s100 F4^fLnV^5I0^>BCcFSHT?2
+IEgfJ5;^<Uj_HK9`O55LSI1
+R3
+R4
+S1
+R0
+w1725802901
+8../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top_AXI.v
+F../hdl/NandFlashcontroller/tb/tb_NandFlashController_Top_AXI.v
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+ntb_@nand@flash@controller_@top_@a@x@i
+vtb_NFC_Atom_Command_Generator_Top
+R1
+R2
+!i10b 1
+!s100 ?;a^nB_4l?be:8MG<?W@Y0
+IPRlNhn6YhB;A`E41`7Rf?0
+R3
+R4
+S1
+R0
+w1725802818
+8../hdl/NandFlashcontroller/tb/tb_NFC_Atom_Command_Generator_Top.v
+F../hdl/NandFlashcontroller/tb/tb_NFC_Atom_Command_Generator_Top.v
+R16
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+ntb_@n@f@c_@atom_@command_@generator_@top
+vtb_NFC_Command_Issue_Top
+R1
+R2
+!i10b 1
+!s100 8C8F1ICGOmP7j>ZWV`NM02
+IT@KJYPelN2gJC2To2Dalm1
+R3
+R4
+S1
+R0
+w1725802930
+8../hdl/NandFlashcontroller/tb/tb_NFC_Command_Issue_Top.v
+F../hdl/NandFlashcontroller/tb/tb_NFC_Command_Issue_Top.v
+R16
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+ntb_@n@f@c_@command_@issue_@top
+vtb_NFC_Physical_Top
+R1
+R2
+!i10b 1
+!s100 VTiR_X>eHOO4IPV[9KB7M1
+I[;mfSY[?^5Vb;g?;nE_Gg1
+R3
+R4
+S1
+R0
+w1725802955
+8../hdl/NandFlashcontroller/tb/tb_NFC_Physical_Top.v
+F../hdl/NandFlashcontroller/tb/tb_NFC_Physical_Top.v
+R16
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+ntb_@n@f@c_@physical_@top

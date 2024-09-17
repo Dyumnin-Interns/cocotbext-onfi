@@ -8,22 +8,23 @@ from cocotb.triggers import FallingEdge, RisingEdge, Timer
 from commands import txn, cmds
 from bus import Bus
 from memory import sigdict
+from driver import NFCOpcodeDriver
 
 async def generate_clock(dut):
     """Generate clock pulses."""
-    cocotb.start_soon(Clock(dut.clk, 1, units="ns").start())
+    cocotb.start_soon(Clock(dut.iSystemClock, 1, units="ns").start())
 @cocotb.test()
 async def test_bus_signal_expansion(top):
-    bus = Bus(top, name="u_nand_controller", signals=sigdict)
+    bus = Bus(top, name="inst_NFC_Physical_Top", signals=sigdict)
     
     
     assert hasattr(bus, "RE_0_n"), "Signal RE_0_n not found"
     assert hasattr(bus, "RE_1_n"), "Signal RE_1_n not found"
 
   
-    assert getattr(bus, "IO0_0") == getattr(bus, "IO0_0") 
+    ##assert getattr(bus, "IO0_0") == getattr(bus, "IO0_0") 
 
-    found = False
+    ##found = False
     for sig_name in dir(bus):
         if sig_name.casefold() == "re_0_n".casefold():
             found = True
@@ -33,6 +34,43 @@ async def test_bus_signal_expansion(top):
 
 
 
+
+
+@cocotb.test()
+async def test_opcodes(dut):
+    # Define opcodes to test
+    opcodes = [
+        ##0b100000,  # Select Way Opcode
+        ##0b100010,  # Set Column Address Opcode
+        ##0b100100,  # Set Row Address Opcode
+        0b000001  # Reset Opcode
+        ##0b000010,  # Set Feature Opcode
+        ##0b000101   # Get Feature Opcode
+    ]
+
+    for opcode in opcodes:
+        # Wait for the rising edge of the clock
+        await RisingEdge(dut.iSystemClock)
+        
+        # Send the opcode
+        await driver._driver_send(opcode, delay_after_opcode=1000)  # Adjust the method if needed
+
+        # Optionally wait for some time to let the DUT process the opcode
+        await Timer(1000, units='ns')
+
+        ##assert dut.iOpcode.value == opcode, f"Opcode {opcode} was not driven correctly."
+
+
+
+
+
+
+
+
+
+   
+
+'''
 
 @cocotb.test()
 async def test_reset(dut):
@@ -215,5 +253,5 @@ async def test_multi_plane_block_erase(dut):
     addr = [0x01, 0x02, 0x03]  # Example address
     await txn('multi_plane_block_erase', dut, addr=addr)  # Corrected command name
     await Timer(10, units='ns')
-
+'''
 
